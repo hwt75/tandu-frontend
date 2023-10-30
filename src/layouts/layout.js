@@ -2,14 +2,15 @@ import * as React from "react";
 import { Header } from "./header";
 import { Routes } from "./routes";
 import { Footer } from "./footer";
-import './layout.scss';
+import ThemeProvider from "react-bootstrap/ThemeProvider";
+import "./layout.scss";
 
 export const Layout = () => {
-    return(
-        <div className="App">
-        <Header/>
-        <Routes/>
-        <Footer/>
-        </div>
-    )
-}
+  return (
+    <div className="App">
+      <Header />
+      <Routes />
+      <Footer />
+    </div>
+  );
+};
