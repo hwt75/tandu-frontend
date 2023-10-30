@@ -1,0 +1,162 @@
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    
+}
+#wrapper {
+    /* Kích thước màn hình là 1280 x 720 */
+    width: 100%;
+    height: 100vh;
+}
+#header {
+    width: 100%;
+    padding:0px 30px;
+    margin-top:33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+#header .logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+.item .signin{
+    width: 191px;
+    height: 40px;
+    background:#00CC00;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition:0.4s;
+    padding: 10px 15px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.item .sigin:hover{
+    cursor: pointer;
+}
+.icon-search{
+    border-radius: 70%;
+    background: #e6ffe9;
+    padding: 15px;
+    font-size: 20px;
+    color:#000;
+}
+.item i:hover{
+    color: #fff;
+    background: #00CC00;
+    cursor: pointer;
+}
+#menu .item a:hover{
+    color: #00CC00;
+    background: #fff;
+}
+
+#menu .item a {
+    color:#000;
+    text-decoration: none;
+    font-size: 700;
+}
+#menu .bxs-home{
+    color:#00CC00;
+    margin-top: 5px;
+}
+
+#menu .subnav{
+    display:none;
+    min-width: 220px;
+    position:absolute;
+    box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+    padding: 10px 0;
+    list-style: none;
+
+}
+#menu li:hover > ul.subnav{
+    display:block; 
+    background:#00CC00;
+    color: #fff;
+}
+#menu .item .subnav a{
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 40px;
+    font-size: 15px;
+    right:0;
+    background: #00CC00;
+    color: #fff;
+}
+#menu .subnav > li:hover > a{
+    color: #fff;
+    background: #00CC00;
+}
+#menu .subnav ul.subnav{
+    right:220px;
+}
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item {
+    margin:0px 25px;
+
+}
+
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin-left:22px;
+}
+
+
+.icon{
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.list{
+    display: none;
+    width: 30px;
+    height: 30px;
+    
+
+}
+@media screen and (max-width: 700px) {
+    #menu a:not(:first-Child) {
+        display:none;    
+    }
+    #menu button.icon {
+        display:block;    
+        float:right;
+    }
+}
+/* Lớp "responsive" được thêm vào lớp navigation bằng JavaScript khi người dùng nhấp vào biểu tượng. Lớp này làm cho thanh điều hướng đẹp trên màn hình nhỏ (hiển thị các button theo chiều dọc thay vì chiều ngang) */
+@media screen and (max-width: 700px) {
+    #menu.responsive {
+        position:relative;    
+    }
+    #menu.responsive button.icon {
+        position:absolute;
+        float:right;
+        top:0;
+        right:0;    
+    }
+    #menu.responsive button:not(.icon) {
+        width:100%;
+        display:block;
+        float:none;    
+        text-align:left;
+    }    
+}
+
