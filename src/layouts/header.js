@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import "./header.scss";
-import logo from "../assets/logo-1.png";
+import logo from "../assets/logo.png";
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
