@@ -4,7 +4,8 @@ import { HomePage } from "../pages/home";
 export const Routes = () => {
     return (
         <ReactRouterRoutes>
-            <Route path="*" element={<HomePage/>} />
+            <Route path="home" component={HomePage} />
+            <Route path="/" element={<HomePage/>} />
         </ReactRouterRoutes>
     )
 }
