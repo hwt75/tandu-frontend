@@ -1,27 +1,32 @@
 $primary-color: #F2B642;
 $secondary-color: #0857A3;
 
-footer {
+.footer {
     background-color: black;
     padding: 48px 0;
     bottom: 0;
 
     .footer-content {
-        border-bottom: 1px solid #b8b8b9;
-        padding: 0;
-
+        // border-bottom: 1px solid #b8b8b9;
+        padding: 0 30px;
+        
         .row {
             margin: 0;
             padding: 0;
+           
         }
-
+        .border-botom{
+            border-bottom: 1px solid #b8b8b9;
+        }
         ul {
             list-style: none;
             padding: 0;
         }
     
         .footer-item {
+            
             margin-bottom: 12px;
+            
             .company-logo {
                 width: 120px;
                 margin-bottom: 12px;
