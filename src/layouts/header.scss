@@ -45,11 +45,22 @@ $secondary-color: #0857A3;
             font-size: 20px;
             cursor: pointer;
         }
-        .header-menu {
-            list-style: none;
-            padding: 20px 0;
+        .menu {
+            display: flex;
+            align-items: center;
+
+            .header-menu {
+                list-style: none;
+                padding: 24px 0;
+            }
+            .signin-btn {
+                background-color: #0857A3;
+                color: white;
+                border: none;
+                padding: 8px 20px;
+                border-radius: 20px;
+            }
         }
-        
     }
 }
 
@@ -58,7 +69,7 @@ $secondary-color: #0857A3;
     .bars-icon {
         display: block;
         position: absolute;
-        left: 12px;
+        left: 20px;
     }
 
     .main-logo {
@@ -69,7 +80,7 @@ $secondary-color: #0857A3;
     }
 
     .header-menu {
-        position: fixed;
+        position: sticky;
         background-color: white;
         left: 0;
         height: 100%;
@@ -100,6 +111,12 @@ $secondary-color: #0857A3;
         .menu-item:hover {
             color: $secondary-color;
         }
+
+
+    }
+
+    .btn-box {
+        position: absolute;
     }
 
     .hidden-mb {
@@ -159,6 +176,10 @@ $secondary-color: #0857A3;
         
         .menu-item:hover {
             color: $secondary-color;
+        }
+
+        .signin-btn {
+            margin-left: 20px;
         }
     }
 }
