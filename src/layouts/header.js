@@ -26,14 +26,17 @@ export const Header = () =>{
                 <div className="header-content container">
                     <FaBars className="bars-icon" onClick={sideBarToogle}/>
                     <a className="main-logo" title="Du học Tân Du"><Image src={logo}/></a>
-                    <ul className="header-menu hidden-mb">
-                        <FaXmark className="hide-icon" onClick={sideBarToogle}/>
-                        <li className="menu-item">Trang chủ</li>
-                        <li className="menu-item">Về chúng tôi</li>
-                        <li className="menu-item">Dịch vụ</li>
-                        <li className="menu-item">Học bổng</li>
-                        <li className="menu-item">Liên hệ</li>
-                    </ul>
+                    <div className="menu">
+                        <ul className="header-menu hidden-mb">
+                            <FaXmark className="hide-icon" onClick={sideBarToogle}/>
+                            <li className="menu-item">Trang chủ</li>
+                            <li className="menu-item">Về chúng tôi</li>
+                            <li className="menu-item">Dịch vụ</li>
+                            <li className="menu-item">Học bổng</li>
+                            <li className="menu-item">Liên hệ</li>
+                        </ul>
+                        <div className="btn-box"><button className="signin-btn">Đăng kí tư vấn</button></div>
+                    </div>
                 </div>
             </div>
         </header>
