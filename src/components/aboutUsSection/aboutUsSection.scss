@@ -10,25 +10,29 @@
     p {
         margin: 0;
     }
+    .navigate{
+        cursor: pointer;
+    }
 }
 
 /* PC */
 @media (min-width: 991px) {
     .section {
-        min-height: 30rem;
+        min-height: 15rem;
+        
     }
 }
 
 /* Tablet */
 @media (max-width: 991px) {
     .section {
-        min-height: 20rem;
+        min-height:10rem;
     }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
     .section {
-        min-height: 15rem;
+        min-height: 5rem;
     }
 }
