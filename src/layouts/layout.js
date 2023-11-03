@@ -11,7 +11,7 @@ export const Layout = () => {
     <div className="App">
       <Header />
       <IconSideBar />
-      <Routes />
+      <div className="body-content"><Routes /></div>
       <Footer />
     </div>
   );

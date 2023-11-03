@@ -1,5 +1,10 @@
 .App{
-    width: 100%;    
+    width: 100%; 
+    // display: block;   
     height: auto;
-    padding: 5px;
+    padding: 3px;
+    position: relative;
+    .body-content{
+        margin-top: 76px;
+    }
 }
