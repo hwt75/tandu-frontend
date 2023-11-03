@@ -11,8 +11,8 @@ export const AboutUsSection = (props) => {
     const navigate = useNavigate();
     return (
         <>
-            <div className='section' style={{ backgroundImage: `url(${bgImg})` }}>
-                <h1 className='section-heading'>Về chúng tôi</h1>
+            <div className='section' style={{ backgroundImage: `url(${props.image})` }}>
+                <h1 className='section-heading'>{props.title}</h1>
                 <p className='navigate' onClick={()=> navigate('/')}>Trang chủ</p>
             </div>
         </>

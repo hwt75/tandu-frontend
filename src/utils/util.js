@@ -32,7 +32,7 @@ export const axiosRequest = (path, method, data) => {
     method,
   };
   console.log(axiosConfig);
-  axios.data = { code: createKey(secret) };
+  axiosConfig.data = { code: createKey(secret) };
 
   return axios(axiosConfig);
 };
