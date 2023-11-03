@@ -1,14 +1,7 @@
 import axios from "axios";
 
-const host = `${process.env.HOST}:${process.env.PORT}` || "failed";
-const secret = process.env.SECRET_KEY || "failed";
-export const axiosMethod = {
-  GET: "GET",
-  POST: "POST",
-  PUT: "PUT",
-  DELETE: "DELETE",
-};
-
+const host = `${process.env.REACT_APP_HOST}:${process.env.REACT_APP_PORT}${process.env.REACT_APP_PATH}` || "failed";
+const secret = process.env.REACT_APP_SECRET_KEY || "failed";
 const generateRandomString = (length) => {
     const characters =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -24,17 +17,9 @@ const generateRandomString = (length) => {
     return generateRandomString(20) + "-" + key + "-" + generateRandomString(20);
   };
   
-export const axiosRequest = (path, method, data) => {
+export const axiosRequest = (path) => {
   const url = `${host}${path}`;
-
-  const axiosConfig = {
-    url,
-    method,
-  };
-  console.log(axiosConfig);
-  axios.data = { code: createKey(secret) };
-
-  return axios(axiosConfig);
+  return axios.post(url, { code: createKey(secret) });
 };
 
 

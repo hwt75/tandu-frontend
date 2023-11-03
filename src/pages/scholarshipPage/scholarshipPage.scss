@@ -1,0 +1,121 @@
+$primary-color: #f2b642;
+$secondary-color: #0857a3;
+.containerScholarshipPage {
+  width: 100%;
+  margin-top: 50px;
+  height: 100%;
+  .scholarshipPage {
+    display: flex;
+    .leftscholarshipPage {
+      .rounded {
+        margin: 16px;
+        .topLeftScholarshipPage {
+          display: flex;
+          align-items: center;
+          padding-left: 20px;
+          background-color: $secondary-color;
+          border-top-left-radius: 14px;
+          border-top-right-radius: 14px;
+          height: 50px;
+        }
+        .mainLeftScholarshipPage {
+          .typesOfScholarshipsLight {
+            padding: 10px;
+            .nameScholarships {
+              font-weight: 600;
+            }
+            .contentScholarships {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              .target {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                .iconBook {
+                  color: #a9a9a9;
+                }
+                .nameTarget {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  width: 80%;
+                }
+              }
+              .description {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                .iconMoney {
+                  color: #a9a9a9;
+                }
+                .title {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  width: 80%;
+                }
+              }
+            }
+          }
+          .typesOfScholarshipsGrey {
+            background-color: #dcdcdc;
+            padding: 10px;
+            .nameScholarships {
+              font-weight: 600;
+            }
+            .contentScholarships {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              .target {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                .iconBook {
+                  color: #a9a9a9;
+                }
+                .nameTarget {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  width: 80%;
+                }
+              }
+              .description {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                .iconMoney {
+                  color: #a9a9a9;
+                }
+                .title {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  width: 80%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .rightscholarshipPage {
+      .studyAbroadCountries {
+        height: 400px;
+        width: 80%;
+        border: 1px solid#DCDCDC;
+        border-radius: 14px;
+        .topStudyAbroadCountries {
+          height: 50px;
+          background-color: $secondary-color;
+          border-top-left-radius: 14px;
+          border-top-right-radius: 14px;
+        }
+        .mainStudyAbroadCountries {
+        }
+      }
+    }
+  }
+}
