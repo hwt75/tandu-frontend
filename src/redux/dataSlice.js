@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { axiosRequest,axiosMethod } from '../utils/util';
+import { axiosRequest } from '../utils/util';
 
 export const loadStatus = {
     None: 0,
@@ -10,7 +10,7 @@ export const loadStatus = {
 
   export const getCountries = createAsyncThunk('countries', async (params, { rejectWithValue }) => {
     try {
-      const response = await axiosRequest('/get-countries',axiosMethod.POST );
+      const response = await axiosRequest('/get-countries' );
       return response.data;
     } 
     catch (error) {
