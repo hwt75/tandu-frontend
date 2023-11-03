@@ -5,6 +5,7 @@ $secondary-color: #0857A3;
     .section-heading {
         margin: 32px 0 72px;
         text-transform: uppercase;
+        color: black;
     }
 }
 .country {
@@ -26,6 +27,7 @@ $secondary-color: #0857A3;
                 width: 100%;
                 box-sizing: border-box;
                 display: block;
+                transition: transform .5s;
             }
             .flag-description {
                 position: absolute;
@@ -58,8 +60,12 @@ $secondary-color: #0857A3;
             bottom: 0;
             left: 0;
             background: linear-gradient(180deg,rgba(0,0,0,0) 25.29%,rgba(0,0,0,.5) 91.18%);
+            
         }
         .flag-img:hover {
+            img {
+                transform: scale(1.1);
+            }
             .flag-description {
                 animation-name: fadeIn;
             }
