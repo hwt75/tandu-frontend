@@ -1,3 +1,5 @@
+$secondary-color: #0857A3;
+$primary-color: #F2B642;
 .section {
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,28 +9,36 @@
     align-items: center;
     position: relative;
     flex-direction: column;
-    p {
-        margin: 0;
+    .section-heading{
+        margin-bottom: 10px
+    }
+    .navigate{
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .navigate:hover{
+        color: $primary-color;
     }
 }
 
 /* PC */
 @media (min-width: 991px) {
     .section {
-        min-height: 30rem;
+        min-height: 25rem;
+        
     }
 }
 
 /* Tablet */
 @media (max-width: 991px) {
     .section {
-        min-height: 20rem;
+        min-height:15rem;
     }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
     .section {
-        min-height: 15rem;
+        min-height: 10rem;
     }
 }
