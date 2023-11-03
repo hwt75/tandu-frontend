@@ -22,11 +22,29 @@ ul {
         .title {
             color: $primary-color;
         }
-        .company-name {
-            margin-bottom: 12px;
+        .company-name-box {
+            margin-bottom: 24px;
+            position: relative;
+        }
+        .company-name-box::after {
+            position: absolute;
+            width: 7rem;
+            height: 1px;
+            background: #fff;
+            left: 0;
+            bottom: -12px;
+            content: "";
         }
         .description {
             font-size: 14px;
+        }
+
+        .img-box {
+            .intro-img {
+                border-radius: 8px;
+                overflow: hidden;
+                width: 100%;
+            }
         }
     }
 
@@ -79,9 +97,16 @@ ul {
 }
 
 .news {
-    margin: 54px 0 68px;
+    padding: 54px 0;
+    .container {
+        margin-bottom: 12px;
+    }
 
     .list-news {
+        .row {
+            margin-bottom: 24px;
+        }
+
         .col {
             margin-bottom: 16px;
         }
@@ -115,7 +140,6 @@ ul {
     }
 
     .btn-box {
-        margin-top: 32px;
         text-align: center;
         .more-btn {
             border: none;
@@ -137,8 +161,9 @@ ul {
     .col-lg-8 {
         color: black;
         margin-bottom: 16px;
-
+        
         .row {
+            min-height: 100%;
             overflow: hidden;
             background: white;
             border-radius: 8px;
@@ -216,6 +241,11 @@ ul {
 
     .col-lg-6 {
         padding: 0 16px;
+        margin-bottom: 24px;
+    }
+
+    .col-lg-6:last-child {
+        margin-bottom: 0;
     }
     
     .feedback-box {
@@ -262,6 +292,7 @@ ul {
 
             .desc {
                 padding: 0 20px;
+                overflow: auto;
             }
         }
 
@@ -275,10 +306,22 @@ ul {
 }
 
 .partner {
-    margin: 54px 0 66px;
+    padding: 54px 0 66px;
+    background-image: url("../../assets/bg-world.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .list-partner-inner {
+        margin-bottom: 24px;
+
+        h4 {
+            margin-bottom: 32px;
+        }
+    }
     .list-partner {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
         .partner-item {
             border-radius: 8px;
@@ -286,63 +329,9 @@ ul {
             img {
                 width: 100%;
             }
-            margin: 0 12px 12px;
+            padding: 0 12px 12px;
         }
     }
 }
 
-.form-section {
-    margin-bottom: 68px;
-
-    .main-form {
-        max-width: 50rem;
-        background-color: #0857A3;
-        padding: 40px 60px;
-        margin: auto;
-        border-radius: 8px;
-
-        p {
-            color: white;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 32px;
-        }
-        .form-input {
-            padding: 8px 12px;
-            width: 100%;
-            border: none;
-            background-color: #fafafc;
-            box-shadow: 0 1px 2px rgba(0,0,0,.1);
-            border-radius: 8px;
-            margin-bottom: 20px;
-            outline: none;
-        }
-
-        .btn {
-            padding: 8px 32px;
-            border-radius: 30px;
-            margin-top: 20px;
-        }
-
-        .contact-btn {
-            background-color: #147bdc;
-            color: white;
-        }
-
-        .contact-btn:hover {
-            background-color: #0a68c0;
-        }
-
-        .hotline-btn {
-            border: 1px solid #F2B642;
-            color: #F2B642;
-        }
-
-        .hotline-btn:hover {
-            background-color: white;
-        }
-
-    }
-
-
-}
+        

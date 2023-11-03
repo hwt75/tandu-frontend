@@ -37,7 +37,7 @@ $secondary-color: #0857a3;
   top: 40px;
   width: 100%;
   background-color: white;
-  z-index: 2;
+  z-index: 10;
   box-shadow: 1px 4px 27px -5px rgba(0, 0, 0, 0.3);
 
   .header-content {
@@ -117,12 +117,26 @@ $secondary-color: #0857a3;
     }
   }
 
-  .btn-box {
+  .btn-box-tbm {
     position: absolute;
+    right: 12px;
+
+    .signin-btn {
+        background-color: #0857a3;
+        color: white;
+        border: none;
+        padding: 8px 8px;
+        border-radius: 20px;
+        font-size: 11px;
+      }
   }
 
   .hidden-mb {
     display: none;
+  }
+
+  .hidden-pc {
+    display: block;
   }
 }
 
@@ -130,6 +144,10 @@ $secondary-color: #0857a3;
 @media (max-width: 767px) {
   .banner {
     display: none;
+  }
+
+  .main-header {
+    top: 0;
   }
 
   .header-menu {
@@ -183,5 +201,8 @@ $secondary-color: #0857a3;
     .signin-btn {
       margin-left: 20px;
     }
+  }
+  .hidden-pc {
+    display: none;
   }
 }

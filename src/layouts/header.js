@@ -20,8 +20,11 @@ const menu = [
 export const Header = () => {
   const sideBarToogle = () => {
     let sideBar = document.querySelector(".header-menu").classList;
+    let icon= document.querySelector(".bars-icon").classList;
     sideBar.toggle("hidden-mb");
+    icon.toggle("hidden-mb");
   };
+
   const [scrollY, setScrollY] = useState(0);
  
   useEffect(() => {
@@ -59,10 +62,13 @@ export const Header = () => {
               <li className="menu-item">Học bổng</li>
               <li className="menu-item">Liên hệ</li>
             </ul>
-            <div className="btn-box">
+            <div className="btn-box hidden-mb">
               <button className="signin-btn">Đăng kí tư vấn</button>
             </div>
           </div>
+          <div className="btn-box-tbm hidden-pc">
+              <button className="signin-btn">Đăng kí tư vấn</button>
+            </div>
         </div>
       </div>
     </header>

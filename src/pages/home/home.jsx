@@ -1,14 +1,19 @@
 import * as React from "react";
 import { FaMedal, FaAngleLeft, FaAngleRight} from "react-icons/fa6";
 import "./index.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import banner from "../../assets/image/banner.jpg";
 import tandu from "../../assets/tandu.jpg";
+import adboard from "../../assets/Du-Hoc-GSE-2-1.png";
+
 import { CountrySection } from "../../components/countrySection/countrySection";
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 const Home = () => {
+  AOS.init();
   return (
     <>
       <section className="home-slider">
@@ -20,15 +25,15 @@ const Home = () => {
           <div className="introduce row">
             <div className="col-md-6">
               <p className="title">Giới thiệu chung</p>
-              <h3 className="company-name">Công ty Tân Du</h3>
+              <div className="company-name-box"><h3 className="company-name">Công ty Tân Du</h3></div>
               <p className="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloribus consectetur esse consequuntur sit commodi reprehenderit, porro sapiente ipsum pariatur corporis quidem quasi ab excepturi distinctio error fugiat! Est, excepturi?
                 <br/>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloribus consectetur esse consequuntur sit commodi reprehenderit, porro sapiente ipsum pariatur corporis quidem quasi ab excepturi distinctio error fugiat! Est, excepturi?
               </p>
             </div>
-            <div className="col-md-6">
-              
+            <div className="col-md-6 img-box">
+              <img src= {adboard} className="intro-img"/>
             </div>
           </div>
           <div className="stat-list row">
@@ -90,7 +95,7 @@ const Home = () => {
         </div>
       </section>
       <section className="news">
-        <div className="container">
+        <div className="container " data-aos="fade-up">
           <h3 className="section-heading">Tin tức mới nhất</h3>
           <div className="list-news">
             <div className="row gx-md-5 gy-5 row-cols-lg-4 row-cols-md-3 row-cols-2">
@@ -207,53 +212,50 @@ const Home = () => {
       <section className="partner">
         <div className="container">
           <h3 className="section-heading">Đối tác tiêu biểu</h3>
-          <div className="list-partner">
-            <div className="partner-item col-lg-2 col-md-4 col-6">
-              <img src={tandu}/>
+          <div className="list-partner-inner">
+            <h4>Đối tác trong nước</h4>
+            <div className="list-partner">
+              <div className="partner-item col-lg-2 col-md-4 col-6">
+                <img src={tandu}/>
+              </div>
+              <div className="partner-item col-lg-2 col-md-4 col-6">
+                <img src={tandu}/>
+              </div>
+              <div className="partner-item col-lg-2 col-md-4 col-6">
+                <img src={tandu}/>
+              </div>
+              <div className="partner-item col-lg-2 col-md-4 col-6">
+                <img src={tandu}/>
+              </div>
+              <div className="partner-item col-lg-2 col-md-4 col-6">
+                <img src={tandu}/>
+              </div>
             </div>
-            <div className="partner-item col-lg-2 col-md-4 col-6">
-              <img src={tandu}/>
-            </div>
-            <div className="partner-item col-lg-2 col-md-4 col-6">
-              <img src={tandu}/>
-            </div>
-            <div className="partner-item col-lg-2 col-md-4 col-6">
-              <img src={tandu}/>
-            </div>
-            <div className="partner-item col-lg-2 col-md-4 col-6">
-              <img src={tandu}/>
-            </div>
-            <div className="partner-item col-lg-2 col-md-4 col-6">
-              <img src={tandu}/>
-            </div>
-            <div className="partner-item col-lg-2 col-md-4 col-6">
-              <img src={tandu}/>
+          </div>
+          <div className="list-partner-inner">
+            <h4>Đối tác quốc tế</h4>
+            <div className="list-partner">
+              <div className="partner-item col-lg-2 col-md-4 col-6">
+                <img src={tandu}/>
+              </div>
+              <div className="partner-item col-lg-2 col-md-4 col-6">
+                <img src={tandu}/>
+              </div>
+              <div className="partner-item col-lg-2 col-md-4 col-6">
+                <img src={tandu}/>
+              </div>
+              <div className="partner-item col-lg-2 col-md-4 col-6">
+                <img src={tandu}/>
+              </div>
+              <div className="partner-item col-lg-2 col-md-4 col-6">
+                <img src={tandu}/>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section className="form-section">
-        <div className="container">
-          <div className="main-form">
-            <p>Bạn muốn đi du học?</p>
-            <form action="">
-              <div className="row gutter-12">
-                <div className="col-md-6"><input className="form-input" id="first-name" placeholder="Tên" type="text"/></div>
-                <div className="col-md-6"><input className="form-input" id="last-name" placeholder="Họ" type="text"/></div>
-                <div className="col-md-6"><input className="form-input" id="email" placeholder="Email" type="email"/></div>
-                <div className="col-md-6"><input className="form-input" id="phone-number" placeholder="SĐT" type="text"/></div>
-                <div className="col-md-6"><input className="form-input" id="country" placeholder="Quốc gia du học" type="text"/></div>
-                <div className="col-md-6"><input className="form-input" id="year" placeholder="Năm học dự kiến" type="text"/></div>
-                <div className="col-md-6"><input className="form-input" id="office" placeholder="Văn phòng*" type="text"/></div>
-                <div className="col-md-6"><input className="form-input" id="why" placeholder="Vì sao bạn biết đến Tân Du" type="text"/></div>
-              </div>
-              <div className="row gutter-12">
-                <div className="col-md-6 text-end"><button className="contact-btn btn">Liên hệ ngay</button></div>
-                <div className="col-md-6"><button className="hotline-btn btn">Hotline: 19000091</button></div>
-              </div>
-            </form>
-          </div>
-        </div>
+        
       </section>
     </>
   );
