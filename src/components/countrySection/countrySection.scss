@@ -14,10 +14,10 @@ $secondary-color: #0857A3;
     flex-wrap: wrap;
 
     .flag {
-        margin:0 32px 32px;
+        margin:0 32px 47px;
         .flag-img {
             position: relative;
-            width: 256px;
+            width: 18rem;
             display: block;
             border-radius: 12px;
             overflow: hidden;
@@ -73,5 +73,8 @@ $secondary-color: #0857A3;
                 display: inline-block;
             }
         }
+    }
+    .flag:last-child {
+        margin-bottom: 20px;
     }
 }

@@ -38,6 +38,14 @@ ul {
         .description {
             font-size: 14px;
         }
+
+        .img-box {
+            .intro-img {
+                border-radius: 8px;
+                overflow: hidden;
+                width: 100%;
+            }
+        }
     }
 
     .stat-list {
@@ -298,16 +306,22 @@ ul {
 }
 
 .partner {
-    margin: 54px 0 66px;
+    padding: 54px 0 66px;
+    background-image: url("../../assets/bg-world.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     .list-partner-inner {
         margin-bottom: 24px;
+
         h4 {
-            margin-bottom: 24px;
+            margin-bottom: 32px;
         }
     }
     .list-partner {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
         .partner-item {
             border-radius: 8px;
@@ -316,78 +330,6 @@ ul {
                 width: 100%;
             }
             padding: 0 12px 12px;
-        }
-    }
-}
-
-.form-section {
-    margin-bottom: 68px;
-
-    .main-form {
-        max-width: 50rem;
-        background-color: #0857A3;
-        padding: 40px 60px;
-        margin: auto;
-        border-radius: 8px;
-
-        p {
-            color: white;
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 32px;
-        }
-        .form-input {
-            padding: 8px 12px;
-            width: 100%;
-            border: none;
-            background-color: #fafafc;
-            box-shadow: 0 1px 2px rgba(0,0,0,.1);
-            border-radius: 8px;
-            margin-bottom: 20px;
-            outline: none;
-        }
-
-        .btn {
-            padding: 8px 32px;
-            border-radius: 30px;
-            margin-top: 20px;
-        }
-
-        .contact-btn {
-            background-color: #147bdc;
-            color: white;
-        }
-
-        .contact-btn:hover {
-            background-color: #0a68c0;
-        }
-
-        .hotline-btn {
-            border: 1px solid #F2B642;
-            color: #F2B642;
-        }
-
-        .hotline-btn:hover {
-            background-color: white;
-        }
-
-    }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-    .list-btn {
-        .col-md-6 {
-            text-align: center;
-        }
-    }
-}
-
-/* Tablet-PC */
-@media (min-width: 768px) {
-    .list-btn {
-        .col-md-6:first-child {
-            text-align: end;
         }
     }
 }
