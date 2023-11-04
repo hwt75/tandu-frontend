@@ -10,11 +10,18 @@ ul {
         width: 100%;
     }
 }
-
+.padding-side{
+    padding-left: 12% !important;
+    padding-right: 12% !important;
+}
 .home-introduce {
-    background-image: linear-gradient(45deg, $secondary-color, #147bdc);
+    background-image: url("../../assets/image/background.png");
+    background-size: cover; /* This will make the image cover the entire element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center;
     color: white;
     padding: 60px 0 48px;
+    
 
     .introduce {
         margin-bottom: 24px;
@@ -95,8 +102,11 @@ ul {
     font-weight: 600;
     margin-bottom: 52px;
 }
-
+.countries{
+    background-image: url("../../assets/bg-world.png");
+}
 .news {
+    background-image: url("../../assets/image/bg-2.png");
     padding: 54px 0;
     .container {
         margin-bottom: 12px;
@@ -154,7 +164,10 @@ ul {
 }
 
 .scholarship {
-    background-image: linear-gradient(45deg, $secondary-color, #147bdc);
+    background-image: url("../../assets/image/background.png");
+    background-size: cover; /* This will make the image cover the entire element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center;
     color: white;
     padding: 54px 0 68px;
     .col-lg-8 {

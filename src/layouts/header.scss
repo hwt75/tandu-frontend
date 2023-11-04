@@ -96,7 +96,7 @@ $secondary-color: #0857a3;
     border-left: 1px solid rgb(256, 256, 256, 0.1);
     animation: FadeIn ease 0.3s;
     list-style: none;
-    top: 40px;
+    top: 0px;
     margin: 0;
     padding: 8px 0 0;
 
@@ -154,7 +154,7 @@ $secondary-color: #0857a3;
   }
 
   .header-menu {
-    top: 0;
+    top: 0px !important;
   }
 }
 

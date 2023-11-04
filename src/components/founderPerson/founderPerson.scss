@@ -1,0 +1,72 @@
+$primary-color: #F2B642;
+$secondary-color: #0857A3;
+
+.contaier {
+  .topFounderPersonPage {
+    width: 100%;
+    margin-bottom: 50px;
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      font-size: 40px;
+      font-weight: 600;
+      color: $secondary-color;
+    }
+    .description {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .text {
+        max-width: 600px;
+      }
+    }
+  }
+  .cardFounderPersonPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contentCardFounderPersonPage {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .customCard {
+        .square {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .imgCard {
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+            margin-top: 10px;
+          }
+        }
+
+        .bodyCard {
+          .posistion {
+            color: #c0c0c0;
+          }
+          .name {
+            color: $secondary-color;
+          }
+          .quote {
+          }
+          .icon {
+            display: flex;
+            .iconFacebook {
+              color: $secondary-color;
+              font-size: 26px;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,6 +9,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { Image } from "react-bootstrap";
 
+const menu = [
+    {id:1,name: "Trang Chủ",path:"/"},
+    {id:2,name: "Về Chúng Tôi",path:"/about"},
+    {id:3,name: "Dịch Vụ",path:"/services"},
+    {id:4,name: "Học Bổng",path:"/scholarships"},
+    {id:5,name: "Liên Hệ",path:"/contact"}
+]
+
 export const Header = () => {
   const sideBarToogle = () => {
     let sideBar = document.querySelector(".header-menu").classList;
@@ -20,12 +28,12 @@ export const Header = () => {
   };
 
   const [scrollY, setScrollY] = useState(0);
-
+ 
   useEffect(() => {
     window.addEventListener("scroll", () => setScrollY(window.scrollY));
-
+   
     return () => {
-      window.removeEventListener("scroll", () => setScrollY(window.scrollY));
+        window.removeEventListener("scroll", () => setScrollY(window.scrollY));
     };
   }, []);
 
@@ -41,7 +49,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      <div className={scrollY >= 20 ? "main-header on-scroll" : "main-header"}>
+      <div className={(scrollY >= 20) ? "main-header on-scroll" : "main-header"}>
         <div className="header-content container">
           <FaBars className="bars-icon" onClick={sideBarToogle} />
           <a className="main-logo" title="Du học Tân Du">
