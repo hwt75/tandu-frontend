@@ -1,5 +1,8 @@
 import * as React from "react";
-import { FaMedal, FaAngleLeft, FaAngleRight} from "react-icons/fa6";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import { AiOutlineLike } from "react-icons/ai";
+import { PiTarget, PiMedal, PiHandshake } from "react-icons/pi";
+import { IoSchoolOutline, IoEarthOutline } from "react-icons/io5";
 import "./index.scss";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -27,9 +30,11 @@ const Home = () => {
               <p className="title">Giới thiệu chung</p>
               <div className="company-name-box"><h3 className="company-name">Công ty Tân Du</h3></div>
               <p className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloribus consectetur esse consequuntur sit commodi reprehenderit, porro sapiente ipsum pariatur corporis quidem quasi ab excepturi distinctio error fugiat! Est, excepturi?
-                <br/>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloribus consectetur esse consequuntur sit commodi reprehenderit, porro sapiente ipsum pariatur corporis quidem quasi ab excepturi distinctio error fugiat! Est, excepturi?
+              Tân Du là một trong những trung tâm giáo dục toàn cầu được thành lập tại Việt Nam. Tân Du hoạt động với các dịch vụ như tư vấn, xử lý hồ sơ du học và xuất khẩu lao động nhanh chóng, luyện phỏng vấn, chi phí minh bạch,... chuyên nghiệp với đội ngũ nhân viên giàu kinh nghiệm tại Việt Nam, Hàn Quốc, Đài Loan, Nhật Bản, vv...
+              <br/>
+              Tân Du đặt uy tín và chất lượng lên hàng đầu để giúp thế hệ trẻ Việt Nam có cơ hội học tập và phát triển tại các quốc gia tiên tiến trên thế giới.
+              <br />
+              Bằng đội ngũ nhân sự thấu hiểu đất nước con người, bằng sự tận tâm và lòng nhiệt tình cống hiến, Tân Du Global được thành lập và hướng đến sứ mệnh giúp các bạn du học sinh “TỎA SÁNG TƯƠNG LAI” của mình.
               </p>
             </div>
             <div className="col-md-6 img-box">
@@ -39,55 +44,55 @@ const Home = () => {
           <div className="stat-list row">
             <div className="col-lg-4 col-md-6">
               <div className="stat-item">
-                <div className="icon"><FaMedal /></div>
+                <div className="icon">< PiMedal /></div>
                 <div className="desc">
-                  <p className="number">12+</p>
-                  <p className="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <p className="number">10+</p>
+                  <p className="text">Tân du với hơn 10 năm kinh nghiệm trong lĩnh vực tư vấn giáo dục - du học châu Á.</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="stat-item">
-                <div className="icon"><FaMedal /></div>
+                <div className="icon">< PiTarget /></div>
                 <div className="desc">
-                  <p className="number">12+</p>
-                  <p className="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <p className="number">100%</p>
+                  <p className="text">Đội ngũ Tân Du với 100% trình độ cao, sẽ hướng dẫn bạn từng bước chi tiết nhất.</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="stat-item">
-                <div className="icon"><FaMedal /></div>
+                <div className="icon">< PiHandshake /></div>
                 <div className="desc">
-                  <p className="number">12+</p>
-                  <p className="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <p className="number">100+</p>
+                  <p className="text">Tân Du liên kết với hơn 100 trường đại học và doanh nghiệp danh tiếng tại châu Á.</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="stat-item">
-                <div className="icon"><FaMedal /></div>
+                <div className="icon"><IoSchoolOutline /></div>
                 <div className="desc">
-                  <p className="number">12+</p>
-                  <p className="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <p className="number">75%</p>
+                  <p className="text">Sinh viên Tân Du được nhận học bổng của các đối tác.</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="stat-item">
-                <div className="icon"><FaMedal /></div>
+                <div className="icon"><AiOutlineLike /></div>
                 <div className="desc">
-                  <p className="number">12+</p>
-                  <p className="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <p className="number">98%</p>
+                  <p className="text">Khách hàng hài lòng với dịch vụ của chúng tôi.</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="stat-item">
-                <div className="icon"><FaMedal /></div>
+                <div className="icon">< IoEarthOutline /></div>
                 <div className="desc">
-                  <p className="number">12+</p>
-                  <p className="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                  <p className="number">0 :( cứu</p>
+                  <p className="text">Chúng tôi chưa có văn phòng. Hãy cứu chúng tôi.</p>
                 </div>
               </div>
             </div>
