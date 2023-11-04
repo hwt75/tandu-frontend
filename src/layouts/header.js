@@ -13,8 +13,10 @@ export const Header = () => {
   const sideBarToogle = () => {
     let sideBar = document.querySelector(".header-menu").classList;
     let icon= document.querySelector(".bars-icon").classList;
+    let signin= document.querySelector(".btn-box-tbm").classList;
     sideBar.toggle("hidden-mb");
     icon.toggle("hidden-mb");
+    signin.toggle("hidden-pc");
   };
 
   const [scrollY, setScrollY] = useState(0);
@@ -58,7 +60,7 @@ export const Header = () => {
               <button className="signin-btn">Đăng kí tư vấn</button>
             </div>
           </div>
-          <div className="btn-box-tbm hidden-pc">
+          <div className="btn-box-tbm hidden-pc hidden">
               <button className="signin-btn">Đăng kí tư vấn</button>
             </div>
         </div>

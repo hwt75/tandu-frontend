@@ -6,6 +6,15 @@ import 'aos/dist/aos.css';
 import banner from "../../assets/image/banner.jpg";
 import tandu from "../../assets/tandu.jpg";
 import adboard from "../../assets/Du-Hoc-GSE-2-1.png";
+import UNSW from "../../assets/UNSW.jpg";
+import UNSW2 from "../../assets/UNSW2.png";
+import SHU from "../../assets/SHU.png";
+import UOB from "../../assets/UOB.png";
+import UOE from "../../assets/UOE.jpg";
+import avt1 from "../../assets/du-hoc-sinh-my-vu-truong-gse.jpg";
+import avt2 from "../../assets/Chi-Nguyen-NTU-e1649305299975.jpg";
+
+
 
 import { CountrySection } from "../../components/countrySection/countrySection";
 // Bootstrap CSS
@@ -151,26 +160,26 @@ const Home = () => {
             <div className="col-lg-8">
               <div className="row">
                 <div className="col-md-6 uni-img">
-                  <img src={banner}/>
+                  <img src={UNSW}/>
                 </div>
                 <div className="col-md-6 text">
                   <div className="university">
-                    <img className="logo" src={tandu}/>
-                    <h5 className="uni-name">ABC</h5>
+                    <img className="logo" src={UNSW2}/>
+                    <h5 className="uni-name">UNIVERSITY OF NEW SOUTH WALES</h5>
                   </div>
-                  <h5 className="title"><a>Học bổng 100%</a></h5>
+                  <h5 className="title"><a>Học bổng 100% học phí hoặc AU$20,000/năm cho sinh viên...</a></h5>
                   <ul className="info">
                     <li><span>Bậc học: Thạc sĩ</span></li>
-                    <li><span>Giá trị: 100% học phí</span></li>
+                    <li><span>Giá trị: 100% học phí hoặc AU$20,000/năm</span></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className="col-lg-4">
               <ul className="list-scholar">
-                <li><a><img src={tandu}/><span>Học bổng 50% học phí cho bậc Thạc sĩ </span></a></li>
-                <li><a><img src={tandu}/><span>Học bổng 50% học phí cho bậc Thạc sĩ </span></a></li>
-                <li><a><img src={tandu}/><span>Học bổng 50% học phí cho bậc Thạc sĩ </span></a></li>
+                <li><a><img src={SHU}/><span>Học bổng 50% học phí cho bậc Thạc sĩ – Transform Together Scholarships</span></a></li>
+                <li><a><img src={UOB}/><span>Học bổng 50% dành cho ngành công nghệ tài chính MSc</span></a></li>
+                <li><a><img src={UOE}/><span>Học bổng 100% học phí cho sinh viên xuất sắc </span></a></li>
               </ul>
               <a className="read-more">Xem thêm</a>
             </div>
@@ -185,11 +194,11 @@ const Home = () => {
               <div className="feedback-content">
                 <div className="arrow left"><FaAngleLeft /></div>
                 <div className="arrow right"><FaAngleRight /></div>
-                <div className="avatar"><img src={tandu}/></div>
+                <div className="avatar"><img src={avt1}/></div>
                 <div className="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident veritatis vel in ipsam commodi deserunt? Ipsa maxime error repellat, autem quos reiciendis et quas est assumenda asperiores maiores, sunt velit quasi esse.</div>
               </div>
               <div className="feedback-footer">
-                <p><b>Trần Minh Tuấn</b> - Chủ tịch code dạo</p>
+                <p><b>Vũ Trường</b> - Kaplan International College </p>
               </div>
             </div>
           </div>
@@ -199,11 +208,11 @@ const Home = () => {
               <div className="feedback-content">
                 <div className="arrow left"><FaAngleLeft /></div>
                 <div className="arrow right"><FaAngleRight /></div>
-                <div className="avatar"><img src={tandu}/></div>
+                <div className="avatar"><img src={avt2}/></div>
                 <div className="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident veritatis vel in ipsam commodi deserunt? Ipsa maxime error repellat, autem quos reiciendis et quas est assumenda asperiores maiores, sunt velit quasi esse.</div>
               </div>
               <div className="feedback-footer">
-                <p><b>Trần Minh Tuấn</b> - Chủ tịch code dạo</p>
+                <p><b>Ms. Chi Nguyen</b> - Nottingham Trent University (UK) </p>
               </div>
             </div>
           </div>
@@ -214,7 +223,7 @@ const Home = () => {
           <h3 className="section-heading">Đối tác tiêu biểu</h3>
           <div className="list-partner-inner">
             <h4>Đối tác trong nước</h4>
-            <div className="list-partner">
+            <div className="list-partner" data-aos="fade-up">
               <div className="partner-item col-lg-2 col-md-4 col-6">
                 <img src={tandu}/>
               </div>
@@ -234,7 +243,7 @@ const Home = () => {
           </div>
           <div className="list-partner-inner">
             <h4>Đối tác quốc tế</h4>
-            <div className="list-partner">
+            <div className="list-partner" data-aos="fade-up">
               <div className="partner-item col-lg-2 col-md-4 col-6">
                 <img src={tandu}/>
               </div>
