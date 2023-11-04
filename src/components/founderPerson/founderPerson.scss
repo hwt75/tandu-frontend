@@ -1,3 +1,6 @@
+$primary-color: #F2B642;
+$secondary-color: #0857A3;
+
 .contaier {
   .topFounderPersonPage {
     width: 100%;
@@ -9,7 +12,7 @@
       margin-bottom: 30px;
       font-size: 40px;
       font-weight: 600;
-      color: #ff1493;
+      color: $secondary-color;
     }
     .description {
       text-align: center;
@@ -50,14 +53,14 @@
             color: #c0c0c0;
           }
           .name {
-            color: #ff1493;
+            color: $secondary-color;
           }
           .quote {
           }
           .icon {
             display: flex;
             .iconFacebook {
-              color: #ff1493;
+              color: $secondary-color;
               font-size: 26px;
               margin-right: 20px;
             }

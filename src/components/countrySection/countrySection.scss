@@ -9,10 +9,11 @@ $primary-color: #F2B642;
     }
     .question{
         color: $secondary-color;
-        cursor: pointer;
+        // cursor: pointer;
         font-size: 16px;
-        text-decoration: underline;
+        // text-decoration: underline;
         margin-bottom: 70px;
+        font-weight: 600;
     }
 }
 .country {

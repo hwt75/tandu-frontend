@@ -1,6 +1,6 @@
 .customModal {
-  width: 80vw; /* Occupy the 90% of the screen width */
-  max-width: 80vw;
+  width: 60vw; /* Occupy the 90% of the screen width */
+  max-width: 60vw;
   .bodyModal {
     margin: 0;
     padding: 0;
@@ -52,6 +52,14 @@
             color: #6495ed;
           }
           .Education {
+            .li-css{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .li-title{
+                margin-left: 10px;
+              }
+            }
           }
         }
       }

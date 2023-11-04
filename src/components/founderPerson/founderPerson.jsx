@@ -205,10 +205,10 @@ const FounderPerson = () => {
         ],
       },
     },
+    
   ];
   const handleClickCard = (data) => {
     setShow(false);
-    console.log(data, "data");
     setinfoTeacher(data);
     setShow(true);
   };
@@ -216,17 +216,15 @@ const FounderPerson = () => {
   return (
     <div className="contaier">
       <div className="topFounderPersonPage">
-        <div className="title">Our Team</div>
+        <div className="title">Đội Ngũ Lãnh Đạo</div>
         <div className="description">
           <div className="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            suscipit quibusdam natus magni voluptate accusamus repellat quo
-            officia! Veniam ad nam debitis ullam dolorem in sint, voluptate quo
-            pariatur? Fugiat.
+          Phần lớn chúng tôi là những cựu du học sinh. Chúng tôi luôn ở đây để giúp thanh niên Việt Nam tìm ra và mài giũa trình độ chuyên môn, tay nghề, để từ đó nâng cao giá trị bản thân. Chúng tôi thực hiện điều này bằng cách phát triển và cung cấp các chương trình du học tùy chỉnh, liên kết với nhiều trường CĐ, ĐH uy tín trên toàn cầu, đi kèm dịch vụ định hướng, tư vấn minh bạch, chu đáo.
           </div>
         </div>
       </div>
       <div className="cardFounderPersonPage">
+
         {data.map((item) => (
           <div className="contentCardFounderPersonPage" key={item.id}>
             <Card className="customCard" style={{ width: "18rem" }}>
@@ -251,6 +249,7 @@ const FounderPerson = () => {
             </Card>
           </div>
         ))}
+
       </div>
       <ModalHandleClickCard
         data={infoTeacher}

@@ -2,10 +2,9 @@ import * as React from "react";
 import "./modalHandleClickCard.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import Button from "react-bootstrap/Button";
+import {RxDash} from "react-icons/rx"
 import Modal from "react-bootstrap/Modal";
 const ModalHandleClickCard = ({ data, open, setshowmodal, avata }) => {
-  console.log(data, open);
   const handleClose = () => setshowmodal(false);
   return (
     <div>
@@ -22,7 +21,7 @@ const ModalHandleClickCard = ({ data, open, setshowmodal, avata }) => {
                 <div className="posistion">{data?.posistion}</div>
               </div>
             </div>
-            <div className="quote">{data?.quote}</div>
+            {/* <div className="quote">{data?.quote}</div> */}
           </div>
           <div className="mainBodyModal">
             <div className="leftMainBodyModal">
@@ -40,7 +39,7 @@ const ModalHandleClickCard = ({ data, open, setshowmodal, avata }) => {
                 <h4 className="title">{data?.study?.title}</h4>
                 <ul className="Education">
                   {data?.study?.description.map((item) => (
-                    <li>{item.title}</li>
+                    <li className="li-css"><RxDash/><div className="li-title">{item.title}</div></li>
                   ))}
                 </ul>
               </div>
