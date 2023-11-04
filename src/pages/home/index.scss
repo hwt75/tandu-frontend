@@ -170,7 +170,6 @@ ul {
     background-position: center;
     color: white;
     padding: 54px 0 68px;
-    
     .col-lg-8 {
         color: black;
         margin-bottom: 16px;
@@ -204,7 +203,14 @@ ul {
             .uni-name {
                 margin: 0;
             }
-            margin-bottom: 4px;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            margin-bottom: 18px;
+        }
+        .info {
+            margin: 0;
         }
     }
 
