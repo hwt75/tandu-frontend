@@ -1,68 +1,70 @@
 $primary-color: #f2b642;
 $secondary-color: #0857a3;
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  .formStudyAbroad {
-    width: 80%;
-    height: 100%;
-    background-color: $secondary-color;
-    border-radius: 10px;
-    padding: 50px;
-    .header {
-      .titleForm {
-        font-size: 30px;
+.form-study{
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .formStudyAbroad {
+      width: 80%;
+      height: 100%;
+      background-color: $secondary-color;
+      border-radius: 10px;
+      padding: 50px;
+      .header {
+        .titleForm {
+          font-size: 30px;
+        }
       }
-    }
-    .form-control {
-      height: 50px;
-    }
-    .customSelect {
-      width: 100%;
-      .dropdown-toggle {
-        background-color: #fff;
-        color: #000;
-        margin: 0;
-        padding: 0;
-        border: 0px;
+      .form-control {
+        height: 50px;
+      }
+      .customSelect {
         width: 100%;
-        margin-top: 8px;
-        display: flex;
+        .dropdown-toggle {
+          background-color: #fff;
+          color: #000;
+          margin: 0;
+          padding: 0;
+          border: 0px;
+          width: 100%;
+          margin-top: 8px;
+          display: flex;
+        }
+        .dropdown-toggle::after {
+          position: absolute;
+          right: 10px;
+          top: 24px;
+        }
       }
-      .dropdown-toggle::after {
-        position: absolute;
-        right: 10px;
-        top: 24px;
-      }
-    }
-    .customFormGroupLeft {
-      display: flex;
-      justify-content: flex-end;
-      .customButton {
-        border-radius: 30px;
-        width: 80%;
-        height: 50px;
+      .customFormGroupLeft {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-end;
+        .customButton {
+          border-radius: 30px;
+          width: 80%;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
-    }
-    .customFormGroupRight {
-      display: flex;
-      justify-content: flex-start;
-      .customButton {
-        border-radius: 30px;
-        width: 80%;
-        height: 50px;
+      .customFormGroupRight {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid $primary-color;
-        .phonenumber {
-          font-size: 24px;
-          color: $primary-color;
+        justify-content: flex-start;
+        .customButton {
+          border-radius: 30px;
+          width: 80%;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid $primary-color;
+          .phonenumber {
+            font-size: 24px;
+            color: $primary-color;
+          }
         }
       }
     }

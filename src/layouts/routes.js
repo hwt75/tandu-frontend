@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Navigate, Route, Routes as ReactRouterRoutes } from "react-router-dom";
+import {Route, Routes as ReactRouterRoutes } from "react-router-dom";
 import { HomePage } from "../pages/home";
 import { ServicePage } from "../pages/servicePage";
 import { ScholarshipPage } from "../pages/scholarshipPage"

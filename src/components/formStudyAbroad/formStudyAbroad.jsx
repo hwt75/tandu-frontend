@@ -47,7 +47,8 @@ const FormStudyAbroad = () => {
     console.log(formData, "hellio");
   };
   return (
-    <div className="container">
+    <div className="form-study">
+      <div className="container">
       <div className="formStudyAbroad">
         <div className="header">
           <span className="titleForm text-light">Bạn muốn đi du học ?</span>
@@ -200,6 +201,8 @@ const FormStudyAbroad = () => {
         </form>
       </div>
     </div>
+    </div>
+
   );
 };
 

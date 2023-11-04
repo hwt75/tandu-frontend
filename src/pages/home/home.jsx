@@ -20,7 +20,7 @@ const Home = () => {
         <img src= {banner}/>
       </section>
       <CountrySection />
-      <section className="home-introduce">
+      <section className="home-introduce padding-side">
         <div className="container"> 
           <div className="introduce row">
             <div className="col-md-6">
@@ -94,7 +94,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="news">
+      <section className="news padding-side">
         <div className="container " data-aos="fade-up">
           <h3 className="section-heading">Tin tức mới nhất</h3>
           <div className="list-news">
@@ -144,7 +144,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="scholarship">
+      <section className="scholarship padding-side">
         <div className="container">
           <h3 className="section-heading">Học bổng du học</h3>
           <div className="row">
@@ -177,7 +177,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="feedback">
+      <section className="feedback padding-side">
         <div className="container">
           <div className="col-lg-6">
             <h4>Du học sinh nói gì về Tân Du</h4>
@@ -209,7 +209,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="partner">
+      <section className="partner padding-side">
         <div className="container">
           <h3 className="section-heading">Đối tác tiêu biểu</h3>
           <div className="list-partner-inner">
@@ -254,9 +254,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="form-section">
-        
-      </section>
+      
     </>
   );
 };

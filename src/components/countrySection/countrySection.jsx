@@ -19,6 +19,7 @@ export const CountrySection = () => {
         <>
             <div className='section container text-center'>
                 <h3 className='section-heading'>Lựa chọn điểm đến của bạn   </h3>
+                <p className='question'>Du học ở quốc gia khác?</p>
                 <div className='country' data-aos="fade-up">
                     <div className='flag'>
                         <div className='flag-img'>

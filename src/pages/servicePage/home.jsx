@@ -22,7 +22,8 @@ const Home = () => {
     {
       id: "2",
       name: "Dịch vụ Đào tạo tiếng Hàn, tiếng Trung",
-      description: "Dịch vụ Đào tạo tiếng Hàn, tiếng Trung",
+
+      description:"Với kinh nghiệm và kiến thức chuyên môn của các giáo viên, Tân Du tự tin đồng hành cùng với bạn trong những bước đầu tiên chinh phục một ngôn ngữ mới, một hành trình mới.,",
     },
     {
       id: "3",
@@ -77,10 +78,6 @@ const Home = () => {
           </div>
         ))}
       </div>
-
-      {/* <FormStudyAbroad />
-      <PhoneButton />
-      <ZaloButton /> */}
       <FounderPerson/>
     </div>
   );
