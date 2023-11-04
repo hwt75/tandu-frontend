@@ -92,6 +92,7 @@ const Home = () => {
       <section className="home-slider">
         <img src={banner} />
       </section>
+      
       <CountrySection />
       <section className="home-introduce padding-side">
         <div className="container">
