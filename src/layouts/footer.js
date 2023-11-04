@@ -44,8 +44,9 @@ const address = {
 };
 export const Footer = () => {
   return (
-    <>
-      <footer className='footer'>
+    <footer>
+      <div className="footer-img"></div>
+      <div className='footer'>
         <div className="footer-content container">
           <div className="row border-botom">
             <div className="footer-item col-lg-4">
@@ -103,7 +104,7 @@ export const Footer = () => {
           </div>
         </div>
         <p className="copyright">@Copyright 2023 – Công ty cổ phần Tân Du.</p>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
