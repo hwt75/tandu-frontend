@@ -1,7 +1,6 @@
 import * as React from "react";
 import FormStudyAbroad from "../../components/formStudyAbroad/formStudyAbroad";
 import PhoneButton from "../../components/phoneButton/phoneButton";
-import ZaloButton from "../../components/zaloButton/zaloButton";
 import FounderPerson from "../../components/founderPerson/founderPerson";
 import "./index.scss";
 import imgHeader from "../../assets/about-page.png";

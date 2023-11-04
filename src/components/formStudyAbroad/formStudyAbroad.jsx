@@ -120,7 +120,6 @@ const FormStudyAbroad = () => {
                 <button
                   type="submit"
                   className="btn customButton bg-primary"
-                //   style={{ backgroundColor: "	#98FB98" }}
                 >
                   <div className="me-4 mb-1 text-light">Liên hệ ngay</div>
                   <BsFillArrowRightCircleFill className="text-light"/>

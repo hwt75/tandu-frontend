@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import banner from "../../assets/image/banner.jpg";
 import tandu from "../../assets/tandu.jpg";
 import adboard from "../../assets/Du-Hoc-GSE-2-1.png";
-import { ReasonSection } from "../../components/reasonSection/reasonSection";
+import FormStudyAbroad from "../../components/formStudyAbroad/formStudyAbroad"
 import { CountrySection } from "../../components/countrySection/countrySection";
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -321,6 +321,9 @@ const Home = () => {
           </div>
           ))}
         </div>
+      </section>
+      <section className="partner padding-side">
+      <FormStudyAbroad />
       </section>
     </>
   );
