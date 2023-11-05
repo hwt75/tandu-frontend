@@ -4,6 +4,7 @@ import { HomePage } from "../pages/home";
 import { ServicePage } from "../pages/servicePage";
 import { ScholarshipPage } from "../pages/scholarshipPage"
 import { ContactPage } from "../pages/contact";
+import { AboutUs } from "../pages/aboutUs/aboutUs";
 import { ErrorPage} from "../pages/errorPage";
 export const Routes = () => {
     return (
@@ -11,7 +12,9 @@ export const Routes = () => {
             <Route path="/home" element={<HomePage/>} />
             <Route path="/service" element={<ServicePage/>} />
             <Route path="/scholarship" element={<ScholarshipPage/>} />
-            <Route path="/contact" element={<ContactPage/>} />
+            <Route path="/contact" elemen   t={<ContactPage/>} />
+            <Route path="/error" element={<ErrorPage/>} />
+            <Route path="/about" element={<AboutUs />} />
             <Route path="*" element={<HomePage/>} />
         </ReactRouterRoutes>
     )

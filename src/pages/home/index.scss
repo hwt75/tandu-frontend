@@ -15,7 +15,10 @@ ul {
     padding-right: 12% !important;
 }
 .home-introduce {
-    background-image: linear-gradient(45deg, $secondary-color, #147bdc);
+    background-image: url("../../assets/image/background.png");
+    background-size: cover; /* This will make the image cover the entire element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center;
     color: white;
     padding: 60px 0 48px;
     
@@ -63,6 +66,7 @@ ul {
             display: flex;
             margin: 0 4px 24px;
             padding: 4px 12px;
+            height: 9rem;
 
             .icon {
                 font-size: 40px;
@@ -161,10 +165,12 @@ ul {
 }
 
 .scholarship {
-    background-image: linear-gradient(45deg, $secondary-color, #147bdc);
+    background-image: url("../../assets/image/background.png");
+    background-size: cover; /* This will make the image cover the entire element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center;
     color: white;
     padding: 54px 0 68px;
-    
     .col-lg-8 {
         color: black;
         margin-bottom: 16px;
@@ -198,7 +204,14 @@ ul {
             .uni-name {
                 margin: 0;
             }
-            margin-bottom: 4px;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            margin-bottom: 18px;
+        }
+        .info {
+            margin: 0;
         }
     }
 

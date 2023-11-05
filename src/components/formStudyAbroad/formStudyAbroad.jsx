@@ -44,10 +44,9 @@ const FormStudyAbroad = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData, "hellio");
   };
   return (
-    <div className="form-study">
+    <div className="form-study" id="form-study">
       <div className="container">
       <div className="formStudyAbroad">
         <div className="header">

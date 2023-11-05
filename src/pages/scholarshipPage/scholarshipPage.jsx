@@ -7,37 +7,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { BsFillBookFill } from "react-icons/bs";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
+import taiwan from "../../assets/taiwan.png"
+import korean from "../../assets/korea.png"
+import { AboutUsSection } from "../../components/aboutUsSection/aboutUsSection";
 
 const Scholarship = () => {
   const studyAbroadCountries = [
     {
       id: "1",
-      name: "Du học Anh",
+      name: "Du học Hàn Quốc",
     },
     {
       id: "2",
-      name: "Du học Úc",
+      name: "Du học Đài Loan",
     },
-    {
-      id: "3",
-      name: "Du học Mỹ",
-    },
-    {
-      id: "4",
-      name: "Du học Canada",
-    },
-    {
-      id: "5",
-      name: "Du học Ireland",
-    },
-    {
-      id: "6",
-      name: "Du học Hà lan",
-    },
-    {
-      id: "7",
-      name: "Du học New Zealand",
-    },
+    
   ];
   const scholarships = {
     korean: [
@@ -91,15 +75,18 @@ const Scholarship = () => {
     ],
   };
   return (
+    <>
+    <AboutUsSection title="Dịch Vụ Của Chúng Tôi"/>
     <div className="containerScholarshipPage">
+      
       <div class=" row scholarshipPage">
         <div class="col-md-8 leftscholarshipPage">
           <div class="rounded">
             {Object.keys(scholarships).map((country) => (
               <div key={country} style={{ marginBottom: 50 }}>
                 <div className="topLeftScholarshipPage ">
-                  <div className="me-3">Logo</div>
-                  <div className="text-light fw-bold fs-4">{country}</div>
+                  <div className={country === "korean" ? "md-3 korean": "md-3 taiwan"} ></div>
+                  <div className="text-light fs-4">{country === "korean" ? "Học bổng Hàn Quốc": "Học bổng Đài Loan"}</div>
                 </div>
                 <div className="mainLeftScholarshipPage">
                   {scholarships[country].map((scholarship, index) => (
@@ -146,8 +133,8 @@ const Scholarship = () => {
         <div class="col-md-4 rightscholarshipPage">
           <div className="studyAbroadCountries ">
             <div className="topStudyAbroadCountries">
-              <div className="name text-light fw-bold fs-5 d-flex align-items-center justify-content-center pt-2">
-                Các nước du học
+              <div className="name fw-bold fs-5 d-flex align-items-center pt-2">
+                Quốc Gia
               </div>
             </div>
             <div className="mainStudyAbroadCountries">
@@ -166,6 +153,7 @@ const Scholarship = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
