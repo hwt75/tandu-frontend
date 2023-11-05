@@ -291,7 +291,7 @@ const Home = () => {
             <h4>{partner.name}</h4>
             <div className="list-partner" data-aos="fade-up">
               {partner.description.map((item,index)=>(
-                <div className="partner-item col-lg-2 col-md-4 col-6">
+                <div className="partner-item col-lg-2 col-md-4 col-6" key={item.name} onClick={()=> {window.open(item.link)}}>
                 <img src={item.img} />
               </div>
               ))}
