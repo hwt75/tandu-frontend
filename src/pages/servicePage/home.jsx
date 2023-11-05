@@ -5,6 +5,8 @@ import FounderPerson from "../../components/founderPerson/founderPerson";
 import "./index.scss";
 import imgHeader from "../../assets/about-page.png";
 import imgBody from "../../assets/nn-min.png";
+import AOS from "aos";
+
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
@@ -41,8 +43,9 @@ const Home = () => {
       description: "Liên hệ với các trường Đại học tại HQ và ĐL",
     },
   ];
+  AOS.init();
   return (
-    <div className="contaierServicePage">
+    <div className="containerServicePage">
       <div className="imgHeader">
         <img src={imgHeader} alt="" className="image" />
         <div className="title">
@@ -50,34 +53,25 @@ const Home = () => {
           <div>Trang chủ</div>
         </div>
       </div>
-      <div>
+      <section className="container service">
         {services.map((item, index) => (
-          <div className="bodyServicePage">
-            <div
-              className="rightBody"
-              style={index % 2 !== 0 ? { display: "none" }: {display:"block"}}
-            >
+          <div className="bodyServicePage row gx-lg-5">
+            <div className="rightBody col-md-6">
               <h2 className="name">{item.name}</h2>
               <div className="description">{item.description}</div>
               <a className="viewMore"> Xem thêm</a>
             </div>
-            <div className="leftBody">
+            <div className="leftBody col-md-6">
               <div className="borderColor">
                 <img src={imgBody} alt="" className="imgBody" />
               </div>
             </div>
-            <div
-              className="rightBody"
-              style={index % 2 === 0 ? { display: "none" }: {display:"block"}}
-            >
-              <h2 className="name">{item.name}</h2>
-              <div className="description">{item.description}</div>
-              <a className="viewMore"> Xem thêm</a>
-            </div>
           </div>
         ))}
-      </div>
-      <FounderPerson/>
+      </section>
+      <section className="founder">
+          <FounderPerson data-aos="fade-up"/>
+      </section>
     </div>
   );
 };

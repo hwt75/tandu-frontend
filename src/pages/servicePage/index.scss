@@ -1,6 +1,7 @@
 $primary-color: #f2b642;
 $secondary-color: #0857a3;
-.contaierServicePage {
+
+.containerServicePage {
   .imgHeader {
     position: relative;
     display: flex;
@@ -19,14 +20,16 @@ $secondary-color: #0857a3;
       text-align: center;
     }
   }
+
   .bodyServicePage {
     width: 100%;
-    padding: 40px;
-    margin-top: 40px;
+    padding: 32px 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
     .leftBody {
-      width: 50%;
+      margin-top: 48px;
       .borderColor {
         width: 80%;
         border: 1px solid $primary-color;
@@ -36,13 +39,12 @@ $secondary-color: #0857a3;
           transform: translateY(-20px);
           margin-left: 20px;
           border-radius: 14px;
+          height: max 100%;
           width: 100%;
         }
       }
     }
-    .rightBody {
-      width: 50%;
-      
+    .rightBody {    
       .name {
         width: 90%;
         margin-bottom: 30px;
@@ -55,4 +57,15 @@ $secondary-color: #0857a3;
       }
     }
   }
+  .bodyServicePage:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+section {
+  padding: 54px 0 68px;
+}
+
+.founder {
+  background-image: url("../../assets/image/bg-2.png");
 }
