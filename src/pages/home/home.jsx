@@ -132,7 +132,8 @@ const Home = () => {
       <section className="countries">
         <CountrySection />
       </section>
-      <section className="home-introduce">
+      
+      <section className="home-introduce padding-side">
         <div className="container" data-aos="fade-up">
           <div className="introduce row">
             <div className="col-md-6">

@@ -3,16 +3,18 @@ $secondary-color: #0857A3;
 
 .reason {
     padding: 54px 0 66px;
+    padding: 54px 0 66px;
     .section-heading {
         margin-bottom: 20px;
     }
 
     .list-reasons {
         margin-top: 48px;
-        .row {
-        width: 100%;
-        margin: 0;
-        }
+      
+    }
+
+    .list-reasons {
+        margin-top: 48px;
     }
 
     .reason-item {
@@ -22,9 +24,16 @@ $secondary-color: #0857A3;
         animation-delay: 0.2s;
         animation-name: fadeInUp;
 
+        cursor: pointer;
+        visibility: visible;
+        animation-delay: 0.2s;
+        animation-name: fadeInUp;
+
         .img-box {
             position: relative;
             cursor: pointer;
+            border-radius: 8px;
+            overflow: hidden;
             border-radius: 8px;
             overflow: hidden;
         }
@@ -37,12 +46,14 @@ $secondary-color: #0857A3;
             left: 0;
             bottom: 0;
             padding: 1rem;
+            padding: 1rem;
             text-transform: uppercase;
             text-align: center;
             font-weight: 600;
             color: #fff;
             background: rgba(53,52,61,.8);
             border-radius: 0 0 8px 8px;
+            width: 100%;
             width: 100%;
             h4 {
                 font-size: 1.1rem;
@@ -70,6 +81,8 @@ $secondary-color: #0857A3;
             transform: translateY(-100%);
             transition: .4s ease-out 0s;
             visibility: hidden;
+            transition: .4s ease-out 0s;
+            visibility: hidden;
         }
 
     }
@@ -77,6 +90,7 @@ $secondary-color: #0857A3;
         .desc {
             opacity: 1;
             visibility: visible;
+            transform: translateY(0); 
             transform: translateY(0); 
         }
     }
