@@ -214,7 +214,7 @@ const FounderPerson = () => {
   };
   const handleClose = (data) => setShow(data);
   return (
-    <div className="contaier">
+    <div className="container">
       <div className="topFounderPersonPage">
         <div className="title">Đội Ngũ Lãnh Đạo</div>
         <div className="description">
@@ -223,11 +223,11 @@ const FounderPerson = () => {
           </div>
         </div>
       </div>
-      <div className="cardFounderPersonPage">
+      <div className="cardFounderPersonPage row">
 
         {data.map((item) => (
-          <div className="contentCardFounderPersonPage" key={item.id}>
-            <Card className="customCard" style={{ width: "18rem" }}>
+          <div className="contentCardFounderPersonPage col-lg-3 col-md-6" key={item.id}>
+            <Card className="customCard">
               <div className="square ">
                 <Card.Img
                   className="imgCard"

@@ -10,7 +10,7 @@ import { AboutUsSection } from "../../components/aboutUsSection/aboutUsSection";
 const Home = () => {
   return (
     <div className="contact">
-<DevelopmentComponent />
+      <DevelopmentComponent />
     </div>
   );
 };

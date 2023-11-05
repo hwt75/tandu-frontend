@@ -107,7 +107,7 @@ const Home = () => {
       <CountrySection />
       </section>
       
-      <section className="home-introduce padding-side">
+      <section className="home-introduce">
         <div className="container">
           <div className="introduce row">
             <div className="col-md-6">
@@ -187,12 +187,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="news padding-side">
-        <div className="container " data-aos="fade-up">         
-           <FounderPerson />
-        </div>
+      <section className="news">  
+           <FounderPerson data-aos="fade-up"/>
       </section>
-      <section className="scholarship padding-side">
+      <section className="scholarship">
         <div className="container" data-aos="fade-up">
           <h3 className="section-heading">Học bổng du học</h3>
           <div className="row">
@@ -246,7 +244,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="feedback padding-side">
+      <section className="feedback">
         <div className="container" data-aos="fade-up">
           <div className="col-lg-6">
             <h4>Du học sinh nói gì về Tân Du</h4>
@@ -304,7 +302,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="partner padding-side">
+      <section className="partner">
         <div className="container" data-aos="fade-up">
           <h3 className="section-heading">Đối tác tiêu biểu</h3>
           
