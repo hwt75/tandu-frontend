@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './aboutUsSection.scss';
-import bgImg from "../../assets/about-page.png";
+import bgImg from "../../assets/image/defaultbg.png";
+
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
@@ -9,9 +10,10 @@ import { useNavigate } from 'react-router-dom';
 
 export const AboutUsSection = (props) => {
     const navigate = useNavigate();
+    const img = props.image ?? bgImg
     return (
         <>
-            <div className='section' style={{ backgroundImage: `url(${props.image})` }}>
+            <div className='section about-us' >
                 <h1 className='section-heading'>{props.title}</h1>
                 <p className='navigate' onClick={()=> navigate('/')}>Trang chủ</p>
             </div>

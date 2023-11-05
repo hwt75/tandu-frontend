@@ -1,4 +1,4 @@
-$icon-top: 500px;
+$icon-top: 700px;
 
 .loader_cube {
   position: fixed;
@@ -12,7 +12,7 @@ $icon-top: 500px;
 .loader_cube--color {
   z-index: 1;
   background: #fff;
-  animation: loadtwo 0.5s ease-in-out infinite;
+  animation: loadtwo 0.25s ease-in-out infinite;
 }
 
 @keyframes loadtwo {
