@@ -14,11 +14,18 @@ $secondary-color: #0857a3;
         .topLeftScholarshipPage {
           display: flex;
           align-items: center;
+          justify-content: space-between;
           padding-left: 20px;
           background-color: $secondary-color;
           border-top-left-radius: 14px;
           border-top-right-radius: 14px;
           height: 50px;
+          .read-more{
+            margin-right: 10px;
+            cursor: pointer;
+          }
+          .read-more:hover{
+          color: $primary-color !important;}
         }
         .korean{
           background-image: url("../../assets/korea.png");

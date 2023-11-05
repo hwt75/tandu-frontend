@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import "./header.scss";
 import logo from "../assets/logo.png";
@@ -31,7 +31,7 @@ export const Header = () => {
   };
 
   const [scrollY, setScrollY] = useState(0);
-  const modalFormRef = useRef();
+  const modalFormRef = React.useRef();
   useEffect(() => {
     window.addEventListener("scroll", () => setScrollY(window.scrollY));
 
@@ -67,7 +67,7 @@ export const Header = () => {
               ))}
             </ul>
             <div className="btn-box hidden-mb">
-              <button className="signin-btn">Đăng kí tư vấn</button>
+              <button className="signin-btn" onClick={()=> {modalFormRef.current.open()}}>Đăng kí tư vấn</button>
             </div>
           </div>
           <div className="btn-box-tbm hidden-pc hidden">

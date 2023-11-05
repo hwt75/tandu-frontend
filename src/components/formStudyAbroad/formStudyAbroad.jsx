@@ -192,7 +192,7 @@ const FormStudyAbroad = () => {
                 <button
                   className="btn customButton "
                 >
-                  <div className="me-2 mb-1 phonenumber">123456789 (Hotline)</div>
+                  <div className="me-2 mb-1 phonenumber">0911 30 11 66</div>
                 </button>
               </div>
             </div>
