@@ -14,6 +14,7 @@ import AOS from "aos";
 import ab from "../../assets/ab.png";
 import avt1 from "../../assets/du-hoc-sinh-my-vu-truong-gse.jpg";
 import avt2 from "../../assets/Chi-Nguyen-NTU-e1649305299975.jpg";
+import { ServiceComponent } from "../../components/serviceComponent/serviceComponent";
 
 const Home = () => {
   AOS.init();
@@ -89,6 +90,7 @@ const Home = () => {
           <div className="btn-box"><button className="join-us-btn">JOIN OUR TEAM</button></div>
         </div>
       </section>
+      <ServiceComponent />
     </div>
   );
 };
