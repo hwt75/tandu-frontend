@@ -15,4 +15,4 @@ const Home = () => {
   );
 };
 
-export const ContactPage = Home;
+export const AboutUs = Home;

@@ -16,8 +16,18 @@ import UOB from "../../assets/UOB.png";
 import UOE from "../../assets/UOE.jpg";
 import avt1 from "../../assets/du-hoc-sinh-my-vu-truong-gse.jpg";
 import avt2 from "../../assets/Chi-Nguyen-NTU-e1649305299975.jpg";
-
-
+import FormStudyAbroad from "../../components/formStudyAbroad/formStudyAbroad"
+import dongnam from "../../assets/image/dhdongam.png";
+import canich from "../../assets/image/dhcanich.jpg";
+import ducdat from "../../assets/image/dhducdat.png";
+import duclam from "../../assets/image/dhhongquocduclam.png"
+import namdai from "../../assets/image/dhungdungnamdai.png"
+import kienhanh from "../../assets/image/dhkienhanh.jpg"
+import joenbuk from "../../assets/image/dhjoenbuk.png"
+import ansan from "../../assets/image/dhshinansan.png"
+import kyungmin from "../../assets/image/dhkyungmin.png"
+import kyung from "../../assets/image/dhdaekyung.jpg"
+import daejeon from "../../assets/image/daihocdaejeon.jpg"
 
 import { CountrySection } from "../../components/countrySection/countrySection";
 // Bootstrap CSS
@@ -32,37 +42,37 @@ const partners = [
       {
         id: "1",
         name: "Đại học Đông Nam",
-        img: "https://drive.google.com/file/d/1USaKJf8ruC-OLbPI5xucaBgMNWuNgXYf/view?usp=drive_link",
+        img: dongnam,
         link: "https://docs.google.com/document/d/1eYK5VXOrLXJuGrMC42NZ1JzV9i6SO4RN/edit?usp=drive_link&ouid=112230120660892027610&rtpof=true&sd=true",
       },
       {
         id: "2",
         name: "Đại học Cần Ích",
-        img: "https://drive.google.com/file/d/1e1aFwOSERzZqMJJ316TnUkYh2VfRbfeD/view?usp=drive_link",
+        img: canich,
         link: "https://docs.google.com/document/d/1ED3LYWvncPrw8ki5z8wM40K4k6Tf98yv/edit?usp=drive_link&ouid=112230120660892027610&rtpof=true&sd=true",
       },
       {
         id: "3",
         name: "Đại học Dục Đạt",
-        img: "https://drive.google.com/file/d/1_eRo-UTLvtiid7aJ8IkN6lQaZBaZIwZ7/view?usp=drive_link",
+        img: ducdat,
         link: "https://docs.google.com/document/d/1QT4J7oleMscmJcROcVsrqYeGHGiVicBB/edit?usp=drive_link&ouid=112230120660892027610&rtpof=true&sd=true",
       },
       {
         id: "4",
         name: "Đại học Hồng Quốc Đức Lâm",
-        img: "https://drive.google.com/file/d/1Nll0ZKuZlAEkbN_z7lZBY-XwtwYETiEO/view?usp=drive_link",
+        img: duclam,
         link: "https://docs.google.com/document/d/1RiIADRNagR2acJJ8bCRidJ-3zZ4dlyIR/edit?usp=drive_link&ouid=112230120660892027610&rtpof=true&sd=true",
       },
       {
         id: "5",
         name: "Đại học KH Ứng dụng Nam Đài",
-        img: "https://drive.google.com/file/d/16QWxZ03X4CUfjNK6xOui7aax7UfGIf81/view?usp=drive_link",
+        img: namdai,
         link: "https://docs.google.com/document/d/1UHc2ynuKWnW4TwgObggF7hZqPzhnYc-c/edit?usp=drive_link&ouid=112230120660892027610&rtpof=true&sd=true",
       },
       {
         id: "6",
         name: "Đại học Kiện hành",
-        img: "https://drive.google.com/file/d/1N3kxxVwL9L3pGF9w_RZQBf77hB7lVn8J/view?usp=drive_link",
+        img: kienhanh,
         link: "https://docs.google.com/document/d/1-H2gzhYCI6Qi6U1L43ldB37iopOyafjc/edit?usp=drive_link&ouid=112230120660892027610&rtpof=true&sd=true",
       },
     ],
@@ -73,31 +83,31 @@ const partners = [
     {
       id: "1",
       name: "Đại học KH JEONBUK",
-      img: "https://drive.google.com/file/d/1ZoYCIAM9dZe6X0xlJIUiFwVUTmu3sBOW/view?usp=drive_link",
+      img: joenbuk,
       link: "https://docs.google.com/document/d/1quW_KSe5eWbwd9lp6ZeXLZn-vwqGqnFZ/edit?usp=drive_link",
     },
     {
       id: "2",
       name: "Đại học SHIN ANSAN",
-      img: "https://drive.google.com/file/d/1gW30TxXBwrBOq2Mv_7m_AbVRFJii_ArT/view?usp=drive_link",
+      img: ansan,
       link: "https://docs.google.com/document/d/1Z4SIdD0cUnkK7tJmiQqFcab5xQ96lh_d/edit?usp=drive_link",
     },
     {
       id: "3",
       name: "Đại học KYUNGMIN",
-      img: "https://drive.google.com/file/d/1YUdD4tuJIDeBAWb6gUEP6lPRrnTgEXTA/view?usp=drive_link",
+      img: kyungmin,
       link: "https://docs.google.com/document/d/1bXpx4tF_prgCUSdKykplt33iua0oCuCb/edit?usp=drive_link",
     },
     {
       id: "4",
       name: "ĐH DAEKYEUNG",
-      img: "https://drive.google.com/drive/folders/1MY3-MyHBzh_YDYHbLXrMXL_DJ4pXr1WJ?usp=drive_link",
+      img: kyung,
       link: "https://docs.google.com/document/d/1eKrFCYq96ewkp4BDESHnqvtf4YxVIX5y/edit?usp=drive_link",
     },
     {
       id: "5",
       name: "Cao đẳng KHKT DAEJEON",
-      img: "https://drive.google.com/drive/folders/1lzaa31RIRh_vRr9f_JPa8yiyCekj0nPE?usp=drive_link",
+      img: daejeon,
       link: "https://docs.google.com/document/d/1SJEKt-vzIKFpr7PxwJm2DhqONltejS7g/edit?usp=drive_link",
     },
   ],
@@ -106,6 +116,13 @@ const partners = [
 
 
 const Home = () => {
+  const scrollToBlock = () => {
+    const element = document.getElementById('form-study');
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   AOS.init();
   return (
     <>
@@ -117,7 +134,7 @@ const Home = () => {
       </section>
       
       <section className="home-introduce padding-side">
-        <div className="container">
+        <div className="container" data-aos="fade-up">
           <div className="introduce row">
             <div className="col-md-6">
               <p className="title">Giới thiệu chung</p>
@@ -269,47 +286,22 @@ const Home = () => {
       <section className="partner padding-side">
         <div className="container" data-aos="fade-up">
           <h3 className="section-heading">Đối tác tiêu biểu</h3>
-          <div className="list-partner-inner">
-            <h4>Đối tác trong nước</h4>
+          {partners.map((partner,index)=>(
+            <div className="list-partner-inner" key={partner.name}>
+            <h4>{partner.name}</h4>
             <div className="list-partner" data-aos="fade-up">
-              <div className="partner-item col-lg-2 col-md-4 col-6">
-                <img src={tandu}/>
+              {partner.description.map((item,index)=>(
+                <div className="partner-item col-lg-2 col-md-4 col-6">
+                <img src={item.img} />
               </div>
-              <div className="partner-item col-lg-2 col-md-4 col-6">
-                <img src={tandu}/>
-              </div>
-              <div className="partner-item col-lg-2 col-md-4 col-6">
-                <img src={tandu}/>
-              </div>
-              <div className="partner-item col-lg-2 col-md-4 col-6">
-                <img src={tandu}/>
-              </div>
-              <div className="partner-item col-lg-2 col-md-4 col-6">
-                <img src={tandu}/>
-              </div>
+              ))}
             </div>
           </div>
-          <div className="list-partner-inner">
-            <h4>Đối tác quốc tế</h4>
-            <div className="list-partner" data-aos="fade-up">
-              <div className="partner-item col-lg-2 col-md-4 col-6">
-                <img src={tandu}/>
-              </div>
-              <div className="partner-item col-lg-2 col-md-4 col-6">
-                <img src={tandu}/>
-              </div>
-              <div className="partner-item col-lg-2 col-md-4 col-6">
-                <img src={tandu}/>
-              </div>
-              <div className="partner-item col-lg-2 col-md-4 col-6">
-                <img src={tandu}/>
-              </div>
-              <div className="partner-item col-lg-2 col-md-4 col-6">
-                <img src={tandu}/>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
+      </section>
+      <section className="partner padding-side">
+      <FormStudyAbroad />
       </section>
     </>
   );
