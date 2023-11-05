@@ -130,7 +130,7 @@ const Home = () => {
         <img src={banner} />
       </section>
       <section className="countries">
-      <CountrySection />
+        <CountrySection />
       </section>
       
       <section className="home-introduce padding-side">

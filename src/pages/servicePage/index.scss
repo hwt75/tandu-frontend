@@ -2,6 +2,10 @@ $primary-color: #f2b642;
 $secondary-color: #0857a3;
 
 .containerServicePage {
+  section {
+    padding: 54px 0 68px;
+  }
+  
   .imgHeader {
     position: relative;
     display: flex;
@@ -60,10 +64,6 @@ $secondary-color: #0857a3;
   .bodyServicePage:nth-child(even) {
     flex-direction: row-reverse;
   }
-}
-
-section {
-  padding: 54px 0 68px;
 }
 
 .founder {

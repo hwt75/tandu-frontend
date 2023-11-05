@@ -3,6 +3,14 @@ $primary-color: #F2B642;
 
 .about-us{
     background-image: url("../../assets/image/defaultbg.png");
+    .section-heading{
+        margin-bottom: 10px;
+        color: white;
+    }
+}
+
+.about-us{
+    background-image: url("../../assets/image/defaultbg.png");
 }
 .section {
     background-size: cover;
