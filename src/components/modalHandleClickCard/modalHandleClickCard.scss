@@ -5,7 +5,10 @@
     margin: 0;
     padding: 0;
     .topBodyModal {
-      background-color: #f0ffff;
+      background-image: url("../../assets/image/background.png");
+      background-size: cover; /* This will make the image cover the entire element */
+      background-repeat: no-repeat; /* This will prevent the image from repeating */
+      background-position: center;
       padding: 20px 50px 20px 50px;
       .info {
         display: flex;
@@ -17,22 +20,40 @@
         }
         .infoTeacher {
           .name {
+            color: #fff;
+
           }
           .posistion {
             font-weight: 600;
-            color: #6495ed;
+            color: #fff;
+            text-transform: capitalize;
           }
         }
       }
       .quote {
         margin-top: 30px;
+        font-weight: 600;
+            color: #fff;
+            text-transform: capitalize;
       }
     }
     .mainBodyModal {
       background-color: #fff;
       padding: 20px 50px 20px 50px;
       display: flex;
-      align-items: center;
+      // align-items: center;
+      .li-css{
+        margin: 10px 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .icon{
+          color:  #6495ed;
+        }
+        .content{
+          margin-left: 10px;
+        }
+      }
       .leftMainBodyModal {
         width: 50%;
         .box {
@@ -52,14 +73,7 @@
             color: #6495ed;
           }
           .Education {
-            .li-css{
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              .li-title{
-                margin-left: 10px;
-              }
-            }
+           
           }
         }
       }

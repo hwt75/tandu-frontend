@@ -5,7 +5,7 @@ $secondary-color: #0857a3;
   width: 100%;
   margin-top: 100px;
   height: 100%;
-  
+
   .scholarshipPage {
     display: flex;
     .leftscholarshipPage {
@@ -20,30 +20,40 @@ $secondary-color: #0857a3;
           border-top-left-radius: 14px;
           border-top-right-radius: 14px;
           height: 50px;
-          .read-more{
+          .read-more {
             margin-right: 10px;
             cursor: pointer;
           }
-          .read-more:hover{
-          color: $primary-color !important;}
+          .read-more:hover {
+            color: $primary-color !important;
+          }
         }
-        .korean{
+        .korean {
           background-image: url("../../assets/korea.png");
-          width: 30px;
+          width: 50px;
           height: 30px;
           background-size: cover; /* This will make the image cover the entire element */
-    background-repeat: no-repeat; /* This will prevent the image from repeating */
-    background-position: center; 
-    margin-right: 10px;
+          background-repeat: no-repeat; /* This will prevent the image from repeating */
+          background-position: center;
+          margin-right: 10px;
         }
-        .taiwan{
+        .taiwan {
           background-image: url("../../assets/taiwan.jpg");
-          width: 30px;
+          width: 50px;
           height: 30px;
           background-size: cover; /* This will make the image cover the entire element */
-    background-repeat: no-repeat; /* This will prevent the image from repeating */
-    background-position: center; 
-    margin-right: 10px;
+          background-repeat: no-repeat; /* This will prevent the image from repeating */
+          background-position: center;
+          margin-right: 10px;
+        }
+        .unique{
+          background-image: url("../../assets/logo-1.png");
+          width: 50px;
+          height: 30px;
+          background-size: cover; /* This will make the image cover the entire element */
+          background-repeat: no-repeat; /* This will prevent the image from repeating */
+          background-position: center;
+          margin-right: 10px;
         }
         .mainLeftScholarshipPage {
           .typesOfScholarshipsLight {
@@ -143,7 +153,7 @@ $secondary-color: #0857a3;
           // background-color: $secondary-color;
           border-top-left-radius: 14px;
           border-top-right-radius: 14px;
-          border-bottom: 1px solid #DCDCDC ;
+          border-bottom: 1px solid #dcdcdc;
         }
         .mainStudyAbroadCountries {
         }

@@ -45,17 +45,17 @@ export const Header = () => {
       <div className="banner">
         <div className="banner-content container">
           <div className="hotline">
-            Hotline: <span className="fw-bold">0123456789</span>
+            Hotline: <span className="fw-bold">0911 30 11 66</span>
           </div>
           <div className="slogan fw-bold">
-            TÂN DU – CẦU VÀNG TỎA SÁNG TƯƠNG LAI
+          Email: duhoctandu@gmail.com - tandu.global.vn@gmail.com
           </div>
         </div>
       </div>
       <div className={scrollY >= 20 ? "main-header on-scroll" : "main-header"}>
         <div className="header-content container">
           <FaBars className="bars-icon" onClick={sideBarToogle} />
-          <a className="main-logo" title="Du học Tân Du">
+          <a className="main-logo" title="Du học Tân Du" onClick={()=> navigate("/")}>
             <Image src={logo} />
           </a>
           <div className="menu">

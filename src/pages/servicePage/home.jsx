@@ -25,9 +25,9 @@ const Home = () => {
         </div>
       </div>
       <ServiceComponent />
-      <section className="founder">
+      {/* <section className="founder">
           <FounderPerson data-aos="fade-up"/>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -18,14 +18,14 @@ const Home = () => {
     },
     {
       id: "2",
-      name: "Dịch vụ Đào tạo tiếng Hàn, tiếng Trung",
+      name: "Dịch vụ đào tạo tiếng Hàn, tiếng Trung",
 
       description:"Với kinh nghiệm và kiến thức chuyên môn của các giáo viên, Tân Du tự tin đồng hành cùng với bạn trong những bước đầu tiên chinh phục một ngôn ngữ mới, một hành trình mới.,",
     },
     {
       id: "3",
       name: "Hỗ trợ xử lý hồ sơ và thủ tục",
-      description: "Hỗ trợ xử lý hồ sơ và thủ tục",
+      description: "Với đội ngũ chuyên viên giàu kinh nghiệm, đã và đang sinh sống, làm việc tại Hàn Quốc, Đài Loan, v.v; Tân Du sẽ giúp bạn tìm kiếm loại thị thực mà bạn mong muốn và hỗ trợ bạn trong quá trình xử lý hồ sơ, đăng ký nhập học, đăng ký xin thị thực...",
     },
     {
       id: "4",
@@ -35,8 +35,8 @@ const Home = () => {
     },
     {
       id: "5",
-      name: "Liên hệ với các trường Đại học tại HQ và ĐL",
-      description: "Liên hệ với các trường Đại học tại HQ và ĐL",
+      name: "Liên hệ với các trường đại học tại HQ và ĐL",
+      description: "Tân Du là đại diện tuyển sinh của các trường Đại học HQ và ĐL tại Việt Nam. Tân Du sẽ thay mặt bạn trao đổi và làm việc với các trường đối tác. Cung cấp cho bạn những thông tin và điều kiện cần thiết tại thời điểm đó.",
     },
   ];
   AOS.init();
@@ -48,7 +48,7 @@ const Home = () => {
             <div className="rightBody col-md-6">
               <h2 className="name">{item.name}</h2>
               <div className="description">{item.description}</div>
-              <a className="viewMore"> Xem thêm</a>
+              {/* <a className="viewMore"> Xem thêm</a> */}
             </div>
             <div className="leftBody col-md-6">
               <div className="borderColor">

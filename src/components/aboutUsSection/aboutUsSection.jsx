@@ -12,11 +12,11 @@ export const AboutUsSection = (props) => {
     const navigate = useNavigate();
     const img = props.image ?? bgImg
     return (
-        <>
-            <div className='section about-us' >
+        <div className='about-us'>
+            <div className='section' >
                 <h1 className='section-heading'>{props.title}</h1>
                 <p className='navigate' onClick={()=> navigate('/')}>Trang chủ</p>
             </div>
-        </>
+        </div>
     )
 }

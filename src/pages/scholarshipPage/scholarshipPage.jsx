@@ -7,10 +7,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { BsFillBookFill } from "react-icons/bs";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
-import taiwan from "../../assets/taiwan.png";
-import korean from "../../assets/korea.png";
+
 import { AboutUsSection } from "../../components/aboutUsSection/aboutUsSection";
 import { BsFillPlusCircleFill } from "react-icons/bs";
+
 const Scholarship = () => {
   const studyAbroadCountries = [
     {
@@ -21,6 +21,7 @@ const Scholarship = () => {
       id: "2",
       name: "Du học Đài Loan",
     },
+    
   ];
   const scholarships = [
     {
@@ -82,14 +83,28 @@ const Scholarship = () => {
       ],
       link: "https://docs.google.com/document/d/1qp0gYJaokBB1bmI1yip2uN9wLTqt6kjs/edit",
     },
+    {
+      name: "unique",
+      title: "Học Bổng Độc Quyền",
+      detail: [
+        {
+          id: "1",
+          name: "VISA F2-R",
+          target: "Tất cả công dân có độ tuổi từ 25",
+          description: "Học phí + Ký túc xá rẻ bằng một nửa so với học ở các trường khác ",
+        },
+        
+      ],
+      link: "https://docs.google.com/document/d/1hDu5mgF0GP60QSOBTflQPAa5kjznRyR9/edit",
+    },
   ];
   return (
     <>
       <AboutUsSection title="Dịch Vụ Của Chúng Tôi" />
       <div className="containerScholarshipPage">
-        <div class=" row scholarshipPage">
-          <div class="col-md-8 leftscholarshipPage">
-            <div class="rounded">
+        <div className=" row scholarshipPage">
+          <div className="col-md-8 leftscholarshipPage">
+            <div className="rounded">
               {scholarships.map((scholarship,index)=> (
                 <div key={scholarship.name} style={{ marginBottom: 50 }}>
                 <div className="topLeftScholarshipPage ">
@@ -149,7 +164,7 @@ const Scholarship = () => {
               ))}
             </div>
           </div>
-          <div class="col-md-4 rightscholarshipPage">
+          <div className="col-md-4 rightscholarshipPage">
             <div className="studyAbroadCountries ">
               <div className="topStudyAbroadCountries">
                 <div className="name fw-bold fs-5 d-flex align-items-center pt-2">

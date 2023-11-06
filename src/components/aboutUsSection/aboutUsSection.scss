@@ -5,13 +5,10 @@ $primary-color: #F2B642;
     background-image: url("../../assets/image/defaultbg.png");
     .section-heading{
         margin-bottom: 10px;
-        color: white;
+        color: white !important;
     }
-}
 
-.about-us{
-    background-image: url("../../assets/image/defaultbg.png");
-}
+
 .section {
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,7 +20,7 @@ $primary-color: #F2B642;
     flex-direction: column;
     .section-heading{
         margin-bottom: 10px;
-        color: white;
+    
     }
     .navigate{
         margin-top: 10px;
@@ -33,7 +30,7 @@ $primary-color: #F2B642;
         color: $primary-color;
     }
 }
-
+}
 /* PC */
 @media (min-width: 991px) {
     .section {

@@ -3,11 +3,11 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { AiOutlineLike } from "react-icons/ai";
 import { PiTarget, PiMedal, PiHandshake } from "react-icons/pi";
 import { IoSchoolOutline, IoEarthOutline } from "react-icons/io5";
+import {LuPhoneCall} from "react-icons/lu";
 import "./index.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import banner from "../../assets/image/banner.jpg";
-import tandu from "../../assets/tandu.jpg";
 import adboard from "../../assets/Du-Hoc-GSE-2-1.png";
 import UNSW from "../../assets/UNSW.jpg";
 import UNSW2 from "../../assets/UNSW2.png";
@@ -15,7 +15,7 @@ import SHU from "../../assets/SHU.png";
 import UOB from "../../assets/UOB.png";
 import UOE from "../../assets/UOE.jpg";
 import avt1 from "../../assets/du-hoc-sinh-my-vu-truong-gse.jpg";
-import avt2 from "../../assets/Chi-Nguyen-NTU-e1649305299975.jpg";
+import kimdongsun from "../../assets/image/kimdongsung.png";
 import FormStudyAbroad from "../../components/formStudyAbroad/formStudyAbroad"
 import dongnam from "../../assets/image/dhdongam.png";
 import canich from "../../assets/image/dhcanich.jpg";
@@ -35,6 +35,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import FounderPerson from "../../components/founderPerson/founderPerson";
+import { useNavigate } from "react-router-dom";
 const partners = [
   {
     name: "Đối tác Đài Loan",
@@ -116,18 +117,13 @@ const partners = [
 
 
 const Home = () => {
-  const scrollToBlock = () => {
-    const element = document.getElementById('form-study');
-
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const navigate = useNavigate()
   AOS.init();
   return (
     <>
       <section className="home-slider">
         <img src={banner} />
+        
       </section>
       <section className="countries">
         <CountrySection />
@@ -205,8 +201,8 @@ const Home = () => {
               <div className="stat-item">
                 <div className="icon">< IoEarthOutline /></div>
                 <div className="desc">
-                  <p className="number">0 :( cứu</p>
-                  <p className="text">Chúng tôi chưa có văn phòng. Hãy cứu chúng tôi.</p>
+                  <p className="number">100%</p>
+                  <p className="text">Du học sinh có việc làm sau khi tốt nghiệp</p>
                 </div>
               </div>
             </div>
@@ -225,26 +221,26 @@ const Home = () => {
                 <div className="col-md-6 uni-img">
                   <img src={UNSW}/>
                 </div>
-                <div className="col-md-6 text">
-                  <div className="university">
+                <div className="col-md-6 text" onClick={()=> window.open("https://docs.google.com/document/d/1hDu5mgF0GP60QSOBTflQPAa5kjznRyR9/edit")}>
+                  <div className="university" >
                     <img className="logo" src={UNSW2}/>
-                    <h5 className="uni-name">UNIVERSITY OF NEW SOUTH WALES</h5>
+                    <h5 className="uni-name">Chương Trình Độc Quyền</h5>
                   </div>
-                  <h5 className="title"><a>Học bổng 100% học phí hoặc AU$20,000/năm cho sinh viên...</a></h5>
+                  <h5 className="title"><a>Chương trình du học nghề độc quyền của Tân Du tới Hàn Quốc</a></h5>
                   <ul className="info">
                     <li><span>Bậc học: Thạc sĩ</span></li>
-                    <li><span>Giá trị: 100% học phí hoặc AU$20,000/năm</span></li>
+                    <li><span>Giá trị: Học phí + Ký túc xá rẻ bằng một nửa so với học ở các trường khác do chương trình có sự hỗ trợ của Chính phủ Hàn Quốc.</span></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className="col-lg-4">
               <ul className="list-scholar">
-                <li><a><img src={SHU}/><span>Học bổng 50% học phí cho bậc Thạc sĩ – Transform Together Scholarships</span></a></li>
+                <li><a><img src={SHU}/><span>Học bổng 50% học phí cho bậc Thạc sĩ</span></a></li>
                 <li><a><img src={UOB}/><span>Học bổng 50% dành cho ngành công nghệ tài chính MSc</span></a></li>
                 <li><a><img src={UOE}/><span>Học bổng 100% học phí cho sinh viên xuất sắc </span></a></li>
               </ul>
-              <a className="read-more">Xem thêm</a>
+              <a className="read-more" onClick={()=> navigate("/scholarship")}>Xem thêm</a>
             </div>
           </div>
         </div>
@@ -255,13 +251,30 @@ const Home = () => {
             <h4>Du học sinh nói gì về Tân Du</h4>
             <div className="feedback-box">
               <div className="feedback-content">
-                <div className="arrow left"><FaAngleLeft /></div>
-                <div className="arrow right"><FaAngleRight /></div>
-                <div className="avatar"><img src={avt1}/></div>
-                <div className="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident veritatis vel in ipsam commodi deserunt? Ipsa maxime error repellat, autem quos reiciendis et quas est assumenda asperiores maiores, sunt velit quasi esse.</div>
+                {/* <div className="arrow left">
+                  <FaAngleLeft />
+                </div>
+                <div className="arrow right">
+                  <FaAngleRight />
+                </div> */}
+                <div className="avatar">
+                  <img src={avt1} />
+                </div>
+                <div className="desc">
+                  Tân Du đã đồng hành cùng mình trong quá trình làm hồ sơ du học
+                  thạc sỹ ngành thời trang tại Anh, từ khâu chọn trường, làm hồ
+                  sơ cho đến những giấy tờ liên quan để nhập học và nhập cảnh.
+                  Các anh chị tư vấn của Tân Du đã hỗ trợ rất nhiệt tình dù khóa
+                  học bị hoãn lại nhiều lần do dịch bệnh, nhưng anh chị vẫn cập
+                  nhật thông tin khóa học đầy đủ và kịp thời để để mình nắm bắt
+                  được trương trình học. Mình rất cảm ơn Tân Du đã giúp đỡ mình
+                  trên bước đường du học.
+                </div>
               </div>
               <div className="feedback-footer">
-                <p><b>Vũ Trường</b> - Kaplan International College </p>
+                <p>
+                  <b>Vũ Trường</b> - Kaplan International College{" "}
+                </p>
               </div>
             </div>
           </div>
@@ -269,13 +282,29 @@ const Home = () => {
             <h4>Đối tác nói gì về Tân Du</h4>
             <div className="feedback-box">
               <div className="feedback-content">
-                <div className="arrow left"><FaAngleLeft /></div>
-                <div className="arrow right"><FaAngleRight /></div>
-                <div className="avatar"><img src={avt2}/></div>
-                <div className="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident veritatis vel in ipsam commodi deserunt? Ipsa maxime error repellat, autem quos reiciendis et quas est assumenda asperiores maiores, sunt velit quasi esse.</div>
+                {/* <div className="arrow left">
+                  <FaAngleLeft />
+                </div>
+                <div className="arrow right">
+                  <FaAngleRight />
+                </div> */}
+                <div className="avatar">
+                  <img src={kimdongsun} />
+                </div>
+                <div className="desc">
+                  Trong quá trình hợp tác cùng Tân Du Việt Nam, điều khiến mình
+                  ấn tượng nhất là sự chuyên nghiệp, chỉn chu và chuyên tâm của
+                  đội ngũ nhân viên tại Tân Du - không chỉ trong dịch vụ tư vấn
+                  du học và hỗ trợ hướng nghiệp cho học sinh, sinh viên mà còn
+                  với đối tác là các tổ chức giáo dục uy tín trong và ngoài
+                  nước. Kính chúc Tân Du sẽ gặt hái thật nhiều thành công trong
+                  chặng đường sắp tới.{" "}
+                </div>
               </div>
               <div className="feedback-footer">
-                <p><b>Ms. Chi Nguyen</b> - Nottingham Trent University (UK) </p>
+                <p>
+                  <b>Mr. Kim Dong Sun</b> -	Chủ tịch kiêm Giám đốc điều hành Colab International Co.,Ltd{" "}
+                </p>
               </div>
             </div>
           </div>

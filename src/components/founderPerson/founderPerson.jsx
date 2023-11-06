@@ -2,7 +2,10 @@ import * as React from "react";
 import "./founderPerson.scss";
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
-import avata from "../../assets/avata.png";
+import phamdao from "../../assets/avata.png";
+import doanminhphu from "../../assets/image/doanminhphu.jpg";
+import tranquangloc from "../../assets/image/tranquangloc.jpg";
+import nguyenthuyninh from "../../assets/image/nguyenthuyninh.jpg";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import ModalHandleClickCard from "../modalHandleClickCard/modalHandleClickCard";
 // Bootstrap Bundle JS
@@ -14,77 +17,27 @@ const FounderPerson = () => {
 
   const data = [
     {
-      id: 1,
-      name: "Pham Thi Bich Dao",
-      posistion: "Giám đốc điều hành",
-      quote: "hãy chiến đấu bằng tất cả sức mạnh",
-      carrer: {
-        title: "Kinh nghiệm làm việc",
-        description: [
-          {
-            title:
-              "Quản lý tiếp thị tại Tổ chức Du lịch Hàn Quốc, Samsung Engineeringring",
-          },
-          {
-            title:
-              "Đại diện của Công ty TNHH Unisem (The loT Smart Solution Company) tại Việt Nam (2019~2021)",
-          },
-          {
-            title:
-              "Người sáng lập kiêm Giám Đốc của HASE K&P CO.,LTD (từ 2017)",
-          },
-          {
-            title:
-              "Chuyên gia tư vấn tự do (Thương mại, Đầu tư, Chuyển đổi số, M&A) ",
-          },
-        ],
-      },
-      study: {
-        title: "Học Vấn",
-        description: [
-          {
-            title:
-              "Giáo sư nghiên cứu thuộc Đại học Songho (Đồng nghiên cứu các dự án chuyển đổi số) (từ 2020)",
-          },
-
-          {
-            title:
-              "Thạc sĩ Thương mại Quốc tế tại Trường nghiên cứu Quốc tế Đại học Chungang (Seoul, Hàn Quốc) (2007)",
-          },
-          {
-            title: "Cử nhân tại trường Đại học Kinh tế Quốc dân (1996)",
-          },
-          {
-            title:
-              "Cử nhân tại trường Đại học Ngoại ngữ - Đại học Quốc gia Hà Nội (2002)",
-          },
-        ],
-      },
-    },
-    {
       id: 2,
-      name: "Hàn Huy Dũng",
-      posistion: "Giám đốc điều hành",
-      quote: "hãy chiến đấu bằng tất cả sức mạnh",
+      name: "Đoàn Minh Phú",
+      posistion: "Chủ Tịch Hội Đồng Quản Trị",
+      quote: "Người Sáng Lập Kiêm Chủ Tịch Hội Đồng Quản Trị",
+      img: doanminhphu,
       carrer: {
         title: "Kinh nghiệm làm việc",
         description: [
           {
             title:
-              "Quản lý tiếp thị tại Tổ chức Du lịch Hàn Quốc, Samsung Engineeringring",
+              "Chủ tịch hội đồng quản trị công ty xuất nhập khẩu Thế giới hải sản",
           },
           {
             title:
-              "Đại diện của Công ty TNHH Unisem (The loT Smart Solution Company) tại Việt Nam (2019~2021)",
+              "Giám đốc điều hành công ty xuất nhập khẩu Thế giới hải sản",
           },
           {
             title:
-              "Người sáng lập kiêm Giám Đốc của HASE K&P CO.,LTD (từ 2017)",
+              "Người sáng lập kiêm chủ tịch hội đồng quản trị công ty giáo dục Tân Du",
           },
-          {
-            title:
-              "Chuyên gia tư vấn tự do (Thương mại, Đầu tư, Chuyển đổi số, M&A) ",
-          },
+          
         ],
       },
       study: {
@@ -92,28 +45,54 @@ const FounderPerson = () => {
         description: [
           {
             title:
-              "Giáo sư nghiên cứu thuộc Đại học Songho (Đồng nghiên cứu các dự án chuyển đổi số) (từ 2020)",
-          },
-
-          {
-            title:
-              "Thạc sĩ Thương mại Quốc tế tại Trường nghiên cứu Quốc tế Đại học Chungang (Seoul, Hàn Quốc) (2007)",
-          },
-          {
-            title: "Cử nhân tại trường Đại học Kinh tế Quốc dân (1996)",
+              "Tốt nghiệp khoa Kinh tế, trường Đại học tổng hợp Matxcova (1995)",
           },
           {
             title:
-              "Cử nhân tại trường Đại học Ngoại ngữ - Đại học Quốc gia Hà Nội (2002)",
+              "Bảo vệ luận án tiến sỹ kinh tế tại Viên nghiên cứu kinh tế và chính trị thế giới thuộc Viên HLKH Liên bang Nga ",
           },
         ],
       },
     },
     {
       id: 3,
-      name: "Trịnh Văn Kiểm",
+      name: "Trần Quang Lộc",
+      posistion: "Tổng Giám Đốc",
+      quote: "Người Sáng Lập Kiêm Tổng Giám Đốc",
+      img: tranquangloc,
+      carrer: {
+        title: "Kinh nghiệm làm việc",
+        description: [
+          {
+            title:
+              "Giám đốc Công ty cổ phần VINASEN",
+          },
+          {
+            title:
+              "Kinh nghiệm 10 năm trong lĩnh vực xuất nhập khẩu",
+          },
+          {
+            title:
+              "Người sáng lập kiêm tổng giám đốc công ty giáo dục Tân Du",
+          },
+        ],
+      },
+      study: {
+        title: "Học Vấn",
+        description: [
+          {
+            title:
+              "Thạc sĩ Quản trị kinh doanh trường Đại học Giao thông vận tải",
+          },
+        ],
+      },
+    },
+    {
+      id: 1,
+      name: "Pham Thi Bich Dao",
       posistion: "Giám đốc điều hành",
-      quote: "hãy chiến đấu bằng tất cả sức mạnh",
+      quote: "Trực tiếp phụ trách mảng du học và xuất khẩu lao động sang Hàn Quốc",
+      img: phamdao,
       carrer: {
         title: "Kinh nghiệm làm việc",
         description: [
@@ -157,29 +136,31 @@ const FounderPerson = () => {
         ],
       },
     },
+   
     {
       id: 4,
-      name: "Lê Văn Cương",
+      name: "Nguyễn Thuỳ Ninh",
       posistion: "Giám đốc điều hành",
-      quote: "hãy chiến đấu bằng tất cả sức mạnh",
+      quote: "Trực tiếp phụ trách mảng du học và xuất khẩu lao động sang Đài Loan",
+      img: nguyenthuyninh,
       carrer: {
         title: "Kinh nghiệm làm việc",
         description: [
           {
             title:
-              "Quản lý tiếp thị tại Tổ chức Du lịch Hàn Quốc, Samsung Engineeringring",
+              "Giám đốc Công ty du học và Thương mại Quốc tế Hải Ninh (từ 2019)",
           },
           {
             title:
-              "Đại diện của Công ty TNHH Unisem (The loT Smart Solution Company) tại Việt Nam (2019~2021)",
+              "Phụ trách Trung tâm đào tạo nghề số 2 tại Công ty Cổ phần Mỹ thuật Trung Ương (từ 2017)",
           },
           {
             title:
-              "Người sáng lập kiêm Giám Đốc của HASE K&P CO.,LTD (từ 2017)",
+              "Sống và làm việc trong thị trường du học và xkld Đài Loan trên 10 năm",
           },
           {
             title:
-              "Chuyên gia tư vấn tự do (Thương mại, Đầu tư, Chuyển đổi số, M&A) ",
+              "Đại diện Công ty Cổ phần Xuất nhập khẩu tổng hợp và Chuyển giao Công nghệ Việt Nam Vinagimex tại Đài Loan (2013-2017) ",
           },
         ],
       },
@@ -188,20 +169,14 @@ const FounderPerson = () => {
         description: [
           {
             title:
-              "Giáo sư nghiên cứu thuộc Đại học Songho (Đồng nghiên cứu các dự án chuyển đổi số) (từ 2020)",
+              "Tốt nghiệp xuất sắc hệ bằng kép khoa tiếng Trung tại Đại học Ngoại ngữ ",
           },
 
           {
             title:
-              "Thạc sĩ Thương mại Quốc tế tại Trường nghiên cứu Quốc tế Đại học Chungang (Seoul, Hàn Quốc) (2007)",
+              "Tốt nghiệp xuất sắc hệ bằng kép khoa tiếng Trung tại khoa Kinh tế Quốc tế tại Đại học Kinh tế, Đại học Quốc gia Hà Nội ",
           },
-          {
-            title: "Cử nhân tại trường Đại học Kinh tế Quốc dân (1996)",
-          },
-          {
-            title:
-              "Cử nhân tại trường Đại học Ngoại ngữ - Đại học Quốc gia Hà Nội (2002)",
-          },
+         
         ],
       },
     },
@@ -232,7 +207,7 @@ const FounderPerson = () => {
                 <Card.Img
                   className="imgCard"
                   variant="top"
-                  src={avata}
+                  src={item.img}
                   onClick={() => handleClickCard(item)}
                 />
               </div>
@@ -255,7 +230,6 @@ const FounderPerson = () => {
         data={infoTeacher}
         open={show}
         setshowmodal={handleClose}
-        avata={avata}
       />
     </div>
   );

@@ -6,9 +6,11 @@ ul {
 }
 
 .home-slider {
+    max-height: 70vh;
     img {
         width: 100%;
     }
+    
 }
 .padding-side{
     padding-left: 12% !important;
@@ -191,9 +193,11 @@ ul {
         }
 
         .text {
+            cursor: pointer;
             padding: 10px 24px;
         }
         .university {
+            
             display: flex;
             align-items: center;
             .logo {
