@@ -31,7 +31,6 @@ $secondary-color: #0857A3;
     justify-content: center;
 
     .contentCardFounderPersonPage {
-      
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -79,5 +78,11 @@ $secondary-color: #0857A3;
       
     }
     
+  }
+}
+.modal-body {
+  .info {
+    .imgTeacher {
+    }
   }
 }

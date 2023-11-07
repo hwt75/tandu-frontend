@@ -123,13 +123,12 @@ const Home = () => {
     <>
       <section className="home-slider">
         <img src={banner} />
-        
       </section>
       <section className="countries">
         <CountrySection />
       </section>
       
-      <section className="home-introduce padding-side">
+      <section className="home-introduce">
         <div className="container" data-aos="fade-up">
           <div className="introduce row">
             <div className="col-md-6">
@@ -327,7 +326,7 @@ const Home = () => {
           ))}
         </div>
       </section>
-      <section className="partner padding-side">
+      <section className="partner">
       <FormStudyAbroad />
       </section>
     </>

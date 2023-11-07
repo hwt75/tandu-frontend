@@ -23,8 +23,8 @@ const ModalHandleClickCard = ({ data, open, setshowmodal, avata }) => {
             </div>
             <div className="quote">{data?.quote}</div>
           </div>
-          <div className="mainBodyModal">
-            <div className="leftMainBodyModal">
+          <div className="mainBodyModal row">
+            <div className="leftMainBodyModal col-md-6">
               <div className="box">
                 <h4 className="title">{data?.carrer?.title}</h4>
                 <ul className="workExperience">
@@ -37,7 +37,7 @@ const ModalHandleClickCard = ({ data, open, setshowmodal, avata }) => {
                 </ul>
               </div>
             </div>
-            <div className="rightMainBodyModal">
+            <div className="rightMainBodyModal col-md-6">
               <div className="box">
                 <h4 className="title">{data?.study?.title}</h4>
                 <ul className="Education">
