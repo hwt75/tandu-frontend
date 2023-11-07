@@ -2,24 +2,24 @@ $primary-color: #f2b642;
 $secondary-color: #0857a3;
 .form-study{
   .container {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
     .formStudyAbroad {
-      width: 80%;
-      height: 100%;
+      max-width: 50rem;
       background-color: $secondary-color;
       border-radius: 10px;
       padding: 50px;
+      margin: 0 auto;
       .header {
         .titleForm {
           font-size: 30px;
         }
+        margin-bottom: 36px;
       }
       .form-control {
         height: 50px;
+        margin-bottom: 18px;
       }
+
       .customSelect {
         width: 100%;
         .dropdown-toggle {
@@ -38,34 +38,47 @@ $secondary-color: #0857a3;
           top: 24px;
         }
       }
-      .customFormGroupLeft {
+
+      .contact-btn {
+        border-radius: 30px;
+        width: 80%;
+        height: 50px;
         display: flex;
-        justify-content: flex-end;
-        .customButton {
-          border-radius: 30px;
-          width: 80%;
-          height: 50px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+      }
+
+      .hotline-btn {
+        border-radius: 30px;
+        width: 80%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $primary-color;
+        .phone-number {
+          font-size: 24px;
+          color: $primary-color;
         }
       }
-      .customFormGroupRight {
-        display: flex;
-        justify-content: flex-start;
-        .customButton {
-          border-radius: 30px;
-          width: 80%;
-          height: 50px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border: 1px solid $primary-color;
-          .phonenumber {
-            font-size: 24px;
-            color: $primary-color;
-          }
-        }
+      .hotline-btn:hover {
+        color: $primary-color;
+        background-color: white;
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .form-study {
+    .container {
+      .formStudyAbroad {
+        padding: 42px 24px;
+      }
+      button {
+        margin: 12px auto;
       }
     }
   }
