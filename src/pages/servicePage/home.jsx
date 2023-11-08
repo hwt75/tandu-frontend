@@ -12,18 +12,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { ServiceComponent } from "../../components/serviceComponent/serviceComponent";
+import { AboutUsSection } from "../../components/aboutUsSection/aboutUsSection";
 
 const Home = () => {
+
+  React.useEffect(()=>{
+    window.scrollTo(0, 0)
+
+  },[])
   AOS.init();
   return (
     <div className="containerServicePage">
-      <div className="imgHeader">
-        <img src={imgHeader} alt="" className="image" />
-        <div className="title">
-          <h2>Dịch vụ</h2>
-          <div>Trang chủ</div>
-        </div>
-      </div>
+     <AboutUsSection title="Dịch Vụ Của Chúng Tôi"/>
       <ServiceComponent />
       {/* <section className="founder">
           <FounderPerson data-aos="fade-up"/>

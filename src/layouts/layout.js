@@ -5,6 +5,7 @@ import { Footer } from "./footer";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 import "./layout.scss";
 import { IconSideBar } from "../components/iconSideBar/home";
+import VideoModalComponent from "../components/videoModal/videoModal";
 
 export const Layout = () => {
   return (
@@ -12,6 +13,7 @@ export const Layout = () => {
       <Header />
       <IconSideBar />
       <div className="body-content"><Routes /></div>
+      <VideoModalComponent />
       <Footer />
     </div>
   );

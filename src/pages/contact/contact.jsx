@@ -10,6 +10,11 @@ import { AboutUsSection } from "../../components/aboutUsSection/aboutUsSection";
 import { ContactComponent } from "../../components/contact/contact";
 
 const Home = () => {
+
+  React.useEffect(()=>{
+    window.scrollTo(0, 0)
+
+  },[])
   return (
     <div className="contact">
       <AboutUsSection image={`${contactImg}`} title="Liên hệ với Tân Du" />

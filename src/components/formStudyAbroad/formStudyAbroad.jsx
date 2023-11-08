@@ -11,7 +11,11 @@ const FormStudyAbroad = () => {
   const [country, setCountry] = React.useState("Quốc gia định du học*");
   const [yearNumber, setYearNumber] = React.useState("Năm học dự kiến*");
   const [reason, setReason] = React.useState("Vì sao bạn biết đến chúng tôi*");
-
+  const handleCallButtonClick = () => {
+    const phoneNumber = '0911301166';
+    const url = `tel:${phoneNumber}`;
+    window.location.href = url;
+  }
   const countrys = [
     { id: 1, label: "Nhật bản" },
     { id: 2, label: "Mỹ" },
@@ -190,7 +194,7 @@ const FormStudyAbroad = () => {
                 <button
                   className="btn hotline-btn"
                 >
-                  <div className="me-2 mb-1 phone-number">0911 30 11 66</div>
+                  <div className="me-2 mb-1 phone-number" onClick={()=> handleCallButtonClick()}>0911 30 11 66</div>
                 </button>
               </div>
             </div>

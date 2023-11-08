@@ -98,9 +98,14 @@ const Scholarship = () => {
       link: "https://docs.google.com/document/d/1hDu5mgF0GP60QSOBTflQPAa5kjznRyR9/edit",
     },
   ];
+
+  React.useEffect(()=>{
+    window.scrollTo(0, 0)
+
+  },[])
   return (
     <>
-      <AboutUsSection title="Dịch Vụ Của Chúng Tôi" />
+      <AboutUsSection title="Học Bổng Của Tân Du" />
       <div className="containerScholarshipPage">
         <div className=" row scholarshipPage">
           <div className="col-md-8 leftscholarshipPage">

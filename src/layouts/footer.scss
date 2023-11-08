@@ -11,10 +11,12 @@ $secondary-color: #0857A3;
 }
 
 .footer {
-    background-color: black;
     padding: 48px 0;
     bottom: 0;
-
+    background-image: url("../assets/image/footer-bg.jpg");
+    background-size: cover; /* This will make the image cover the entire element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center;
     .footer-content {
         padding: 0 30px;
         
