@@ -80,20 +80,19 @@ $secondary-color: #0857a3;
   }
 
   .main-logo {
-    
     img {
       width: 60px;
     }
     margin: 8px auto;
   }
 
-  .header-menu {
-    position: sticky;
+  .header-menu-mb {
+    position: fixed;
     background-color: white;
     left: 0;
     height: 100%;
     width: 256px;
-    z-index: 2;
+    z-index: 11;
     border-left: 1px solid rgb(256, 256, 256, 0.1);
     animation: FadeIn ease 0.3s;
     list-style: none;
@@ -139,6 +138,10 @@ $secondary-color: #0857a3;
     display: none;
   }
 
+  .header-menu-pc {
+    display: none;
+  }
+
   .hidden-pc {
     display: block;
   }
@@ -153,20 +156,12 @@ $secondary-color: #0857a3;
   .main-header {
     top: 0;
   }
-
-  .header-menu {
-    top: 0px !important;
-  }
 }
 
 /* Tablet */
 @media (min-width: 767px) and (max-width: 767px) {
   .banner {
     display: none;
-  }
-
-  .header-menu {
-    top: 40px;
   }
 }
 
@@ -182,7 +177,7 @@ $secondary-color: #0857a3;
     }
   }
 
-  .header-menu {
+  .header-menu-pc {
     list-style: none;
     display: flex;
     margin: 0;
@@ -206,7 +201,7 @@ $secondary-color: #0857a3;
       margin-left: 20px;
     }
   }
-  .hidden-pc {
+  .header-menu-mb {
     display: none;
   }
 }

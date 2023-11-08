@@ -22,12 +22,8 @@ const menu = [
 export const Header = () => {
   const navigate = useNavigate();
   const sideBarToogle = () => {
-    let sideBar = document.querySelector(".header-menu").classList;
-    let icon = document.querySelector(".bars-icon").classList;
-    let signin = document.querySelector(".btn-box-tbm").classList;
+    let sideBar = document.querySelector(".header-menu-mb").classList;
     sideBar.toggle("hidden-mb");
-    icon.toggle("hidden-mb");
-    signin.toggle("hidden-pc");
   };
 
   const [scrollY, setScrollY] = useState(0);
@@ -59,11 +55,9 @@ export const Header = () => {
             <Image src={logo} />
           </a>
           <div className="menu">
-            <ul className="header-menu hidden-mb">
-              <FaXmark className="hide-icon" onClick={sideBarToogle} />
+            <ul className="header-menu header-menu-pc">
               {menu.map((item, index) => (
               <li key={item.name} onClick={()=> navigate(item.path)} className="menu-item">{item.name}</li>
-
               ))}
             </ul>
             <div className="btn-box hidden-mb">
@@ -80,6 +74,12 @@ export const Header = () => {
           </div>
         </div>
       </div>
+      <ul className="header-menu-mb header-menu hidden-mb">
+        <FaXmark className="hide-icon" onClick={sideBarToogle} />
+          {menu.map((item, index) => (
+          <li key={item.name} onClick={()=> {navigate(item.path);sideBarToogle()}} className="menu-item">{item.name}</li>
+          ))}
+      </ul>
       <ModalForm ref={modalFormRef} />
     </header>
   );
