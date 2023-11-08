@@ -14,10 +14,15 @@ import AOS from "aos";
 import ab from "../../assets/ab.png";
 import avt1 from "../../assets/du-hoc-sinh-my-vu-truong-gse.jpg";
 import kimdongsun from "../../assets/image/kimdongsung.png";
-import { ServiceComponent } from "../../components/serviceComponent/serviceComponent";
+
 
 const Home = () => {
   AOS.init();
+
+  React.useEffect(()=>{
+    window.scrollTo(0, 0)
+
+  },[])
   return (
     <div className="about">
       <AboutUsSection title="Về chúng tôi" />

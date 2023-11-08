@@ -1,8 +1,8 @@
-$icon-top: 700px;
+$icon-top: 10px;
 
 .loader_cube {
   position: fixed;
-  top: $icon-top;
+  bottom: $icon-top;
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -26,7 +26,7 @@ $icon-top: 700px;
   }
 }
 .phone {
-  top: $icon-top + 140px;
+  bottom: $icon-top + 140px;
 
   font-size: 10px !important;
   color: #fff;
@@ -34,7 +34,7 @@ $icon-top: 700px;
   border: #39b54a solid 8px;
 }
 .zalo {
-  top: $icon-top + 70px;
+  bottom: $icon-top + 70px;
   border: #1a86ec solid 8px;
   background-color: #0866ff;
   color: #fff;

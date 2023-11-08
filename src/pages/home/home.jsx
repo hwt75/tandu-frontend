@@ -119,6 +119,11 @@ const partners = [
 const Home = () => {
   const navigate = useNavigate()
   AOS.init();
+
+  React.useEffect(()=>{
+    window.scrollTo(0, 0)
+
+  },[])
   return (
     <>
       <section className="home-slider">
