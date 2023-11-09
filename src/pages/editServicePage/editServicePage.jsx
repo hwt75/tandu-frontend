@@ -6,6 +6,7 @@ import imgHeader from "../../assets/about-page.png";
 import imgBody from "../../assets/nn-min.png";
 import AOS from "aos";
 import { AboutUsSection } from "../../components/aboutUsSection/aboutUsSection";
+import img from "../../assets/Dich-vu-sua-bai-luan-hoc-bong.png";
 
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -32,13 +33,13 @@ const Home = () => {
                         <li>Chuyên gia: Mr. Eddy Lawson – Chuyên gia Tư vấn Giáo dục</li>
                         <li>Đăng ký: tại đây hoặc form bên dưới bài viết</li>
                     </ul>
-                    <img />
+                    <div className="img"><img src={img}/></div>
                     <h2 className="heading">Mr. Eddy – Chuyên gia Anh Quốc luôn lắng nghe & thấu hiểu HSSV Việt Nam</h2>
                     <p>Mr. Eddy đã từng giảng dạy tiếng Anh học thuật tại nhiều trường đại học Anh Quốc, bao gồm University of Nottingham – trường đại học danh tiếng thuộc Russell Group, và cũng được chứng nhận đủ tiêu chuẩn là giám khảo chấm thi IELTS. Bên cạnh đó, ông Eddy cũng có các chứng chỉ giảng dạy tiêng Anh quốc tế, như: Cambridge CELTA (Level 5) và Delta (Level 7).</p>
                     <p>Ông đã có hơn 5 năm kinh nghiệm làm việc trong lĩnh vực giảng dạy tại Việt Nam, từ các khóa học tiếng Anh chuyên ngành tại các trường đại học tại Việt Nam đến các khóa luyện thi IELTS. Chính vì vậy, ông luôn hiểu rõ được điểm mạnh và điểm yếu của HSSV Việt Nam.</p>
                     <p>Hiện nay là chuyên gia tư vấn cao cấp tại Tư vấn Du học GSE. Mr. Eddy đã tư vấn sửa bài luận và giúp rất nhiều sinh viên của GSE được nhận học bổng tại các trường đại học/cao đẳng hàng đầu và vô cùng danh giá tại nhiều quốc gia khác nhau.</p>
                     <p>Với kinh nghiệm giảng dạy tại Anh Quốc và Việt Nam, Mr. Eddy luôn hướng tới những giáo trình tiếng Anh học thuật và luyện thi IELTS phù hợp với năng lực của HSSV Việt Nam. Bên cạnh đó, là những khóa học luyện kỹ năng Nghe – Nói cho sinh viên chuẩn bị lên đường du học, nhắm giúp các bạn có cảm giác “quen thuộc hơn” với tiếng Anh bản ngữ và những chia sẻ về cuộc sống thực tế tại nước ngoài.</p>
-                    <img />
+                    <div className="img"><img src={img}/></div>
                     <h2 className="heading">Bài luận học bổng – Chìa khóa thành công của hồ sơ xin học bổng</h2>
                     <p>Khi nhắm đến những suất học bổng khủng, điểm trung bình học tập và IELTS cao là một điều hiển nhiên khi bạn muốn là một trong những ứng viên tiềm năng. Tuy nhiên, số lượng ứng viên có sức học tốt không phải là ít, vì vậy, các trường đã dựa vào một yếu tố vô cùng quan trọng khác để cân nhắc xem sinh viên có xứng đáng được nhận suất học bổng đó hay không – chính là bài luận xin học bổng.</p>
                     <h2 className="heading">Thế nào là một bài luận tốt?</h2>

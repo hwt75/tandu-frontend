@@ -24,12 +24,20 @@ $secondary-color: #0857a3;
                 margin-bottom: 8px;
             }
         }
+        .img {
+            max-width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
         .color-primary {
             color: $primary-color;
         }
     
         .color-secondary {
             color: $secondary-color;
+        }
+        .section-description {
+            font-weight: 600;
         }
     }
     
