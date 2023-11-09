@@ -25,9 +25,6 @@ const Home = () => {
     <div className="containerServicePage">
      <AboutUsSection title="Dịch Vụ Của Chúng Tôi"/>
       <ServiceComponent />
-      {/* <section className="founder">
-          <FounderPerson data-aos="fade-up"/>
-      </section> */}
     </div>
   );
 };

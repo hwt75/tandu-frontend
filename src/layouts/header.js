@@ -61,7 +61,7 @@ export const Header = () => {
               ))}
             </ul>
             <div className="btn-box hidden-mb">
-              <button className="signin-btn" onClick={()=> {modalFormRef.current.open()}}>Đăng kí tư vấn</button>
+              <button className="signin-btn" onClick={()=> {modalFormRef.current.open()}}>Đăng ký tư vấn</button>
             </div>
           </div>
           <div className="btn-box-tbm hidden-pc hidden">

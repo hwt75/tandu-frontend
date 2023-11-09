@@ -29,7 +29,7 @@ const Contact = () => {
                     <p className='company-phone'><FaPhone className='second-color'/> <span className='phone-number'>{address.phone} (Hotline)</span></p>
                 </div>
                 {address.address.map((item,index) =>(
-                    <ul className='list-office'>
+                    <ul className='list-office' key={index}>
                     <li className='office-item'>
                         <h5 className='office-name'>{item.title}</h5>
                         <div className='office-desc'>
