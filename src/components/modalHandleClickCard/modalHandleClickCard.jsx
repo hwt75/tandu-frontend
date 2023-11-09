@@ -28,8 +28,8 @@ const ModalHandleClickCard = ({ data, open, setshowmodal, avata }) => {
               <div className="box">
                 <h4 className="title">{data?.carrer?.title}</h4>
                 <ul className="workExperience">
-                  {data?.carrer?.description.map((item) => (
-                   <li className="li-css">
+                  {data?.carrer?.description.map((item,index) => (
+                   <li className="li-css" key={index}>
                    <div className="icon"> <HiChevronDoubleRight/></div>
                    <div className="content">{item.title}</div>
                  </li>
@@ -41,8 +41,8 @@ const ModalHandleClickCard = ({ data, open, setshowmodal, avata }) => {
               <div className="box">
                 <h4 className="title">{data?.study?.title}</h4>
                 <ul className="Education">
-                  {data?.study?.description.map((item) => (
-                    <li className="li-css">
+                  {data?.study?.description.map((item,index) => (
+                    <li className="li-css" key={index}>
                       <div className="icon"> <HiChevronDoubleRight/></div>
                       <div className="content">{item.title}</div>
                     </li>
