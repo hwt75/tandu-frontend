@@ -6,11 +6,13 @@ import { ScholarshipPage } from "../pages/scholarshipPage"
 import { ContactPage } from "../pages/contact";
 import { AboutUs } from "../pages/aboutUs/aboutUs";
 import { ErrorPage} from "../pages/errorPage";
+import { EditServicePage } from "../pages/editServicePage/editServicePage";
 export const Routes = () => {
     return (
         <ReactRouterRoutes>
             <Route path="/home" element={<HomePage/>} />
             <Route path="/service" element={<ServicePage/>} />
+            <Route path="/service/edit" element={<EditServicePage/>} />
             <Route path="/scholarship" element={<ScholarshipPage/>} />
             <Route path="/contact" element={<ContactPage/>} />
             <Route path="/error" element={<ErrorPage/>} />
