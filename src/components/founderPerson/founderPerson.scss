@@ -70,6 +70,7 @@ $secondary-color: #0857A3;
             justify-content: space-between;
             background-color: white;
             padding: 16px 0 0;
+            align-items: center;
             .icon {
               display: flex;
               .iconFacebook {
@@ -90,6 +91,18 @@ $secondary-color: #0857A3;
 .modal-body {
   .info {
     .imgTeacher {
+    }
+  }
+}
+
+/* PC */
+@media (min-width: 990px) {
+  .card-body {
+    .card-title {
+      min-height: 48px;
+    }
+    .card-text {
+      min-height: 72px;
     }
   }
 }
