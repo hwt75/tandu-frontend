@@ -65,8 +65,8 @@ export const Footer = () => {
                  <p className="p-heading mb-2">{item.title}</p>
                  <span>
                    {item.info} | Email:{" "}
-                   <span className="fw-bold">{address.email}</span> |
-                   Hotline: <span className="fw-bold">{address.phone}</span>
+                   <span className="fw-bold">{address.email}</span>
+                   <br/>Hotline: <span className="fw-bold">{address.phone}</span>
                  </span>
                </li>
                ))}

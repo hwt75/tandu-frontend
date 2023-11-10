@@ -65,13 +65,20 @@ $secondary-color: #0857A3;
           .quote {
             text-transform: capitalize;
           }
-          .icon {
-            display: flex;
-            .iconFacebook {
-              color: $secondary-color;
-              font-size: 26px;
-              margin-right: 20px;
+          .card-footer {
+            display: flex;            
+            justify-content: space-between;
+            background-color: white;
+            padding: 16px 0 0;
+            .icon {
+              display: flex;
+              .iconFacebook {
+                color: $secondary-color;
+                font-size: 26px;
+                margin-right: 20px;
+              }
             }
+
           }
         }
       }

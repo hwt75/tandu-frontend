@@ -215,10 +215,13 @@ const FounderPerson = () => {
                 <Card.Title className="posistion">{item.posistion}</Card.Title>
                 <Card.Title className="name">{item.name}</Card.Title>
                 <Card.Text className="quote">{item.quote}</Card.Text>
-                <div className="icon">
-                  <BsFacebook className="iconFacebook" />
-                  <BsTwitter className="iconFacebook" />
-                  <BsInstagram className="iconFacebook" />
+                <div className="card-footer">
+                  <div className="icon">
+                    <BsFacebook className="iconFacebook" />
+                    <BsTwitter className="iconFacebook" />
+                    <BsInstagram className="iconFacebook" />
+                  </div>
+                  <a>Xem thêm</a>
                 </div>
               </Card.Body>
             </Card>
