@@ -277,6 +277,7 @@ ul {
         padding: 24px;
         border-radius: 12px;
         overflow: hidden;
+        height: 380px;
         
         .feedback-content {
             position: relative;
@@ -322,8 +323,7 @@ ul {
 
         .feedback-footer {
             p {
-                font-size: 18   px;
-                margin: 4px;
+                margin: 0;
             }
         }
     }
