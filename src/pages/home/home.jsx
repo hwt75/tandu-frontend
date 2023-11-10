@@ -324,6 +324,7 @@ const Home = () => {
               {partner.description.map((item,index)=>(
                 <div className="partner-item col-lg-2 col-md-4 col-6" key={item.name} onClick={()=> {window.open(item.link)}}>
                 <img src={item.img} />
+                <div className="desc">Xem thêm</div>
               </div>
               ))}
             </div>

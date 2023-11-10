@@ -348,6 +348,7 @@ ul {
         justify-content: center;
 
         .partner-item {
+            position: relative;
             border-radius: 8px;
             cursor: pointer;
             overflow: hidden;
@@ -355,6 +356,35 @@ ul {
                 width: 100%;
             }
             padding: 0 12px 12px;
+            .desc {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background: rgb(122, 122, 123);
+                border-radius: 8px;
+                padding: 3rem 2rem;
+                text-align: center;
+                max-height: 100%;
+                overflow-y: hidden;
+                opacity: 0;
+                transform: translateY(-100%);
+                transition: .4s ease-out 0s;
+                visibility: hidden;
+            }
+        }
+        .partner-item:hover {
+            .desc {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0); 
+            }
         }
     }
 }
