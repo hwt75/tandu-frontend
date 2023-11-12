@@ -20,7 +20,7 @@ const FounderPerson = () => {
       id: 2,
       name: "Đoàn Minh Phú",
       posistion: "Chủ Tịch Hội Đồng Quản Trị",
-      quote: "Chủ Tịch Hội Đồng Quản Trị Điều Hành Các Hoạt Động",
+      quote: "Điều hành các hoạt động chủ chốt của Tân Du",
       img: doanminhphu,
       carrer: {
         title: "Kinh nghiệm làm việc",
@@ -90,8 +90,8 @@ const FounderPerson = () => {
     {
       id: 1,
       name: "Phạm Thị Bích Đào",
-      posistion: "Giám đốc điều hành",
-      quote: "Giám đốc du học và xuất khẩu lao động sang Hàn Quốc",
+      posistion: "Giám đốc thị trường hàn quốc",
+      quote: "Điều hành các hoạt động du học và xuất khẩu lao động Hàn Quốc",
       img: phamdao,
       carrer: {
         title: "Kinh nghiệm làm việc",
@@ -140,8 +140,8 @@ const FounderPerson = () => {
     {
       id: 4,
       name: "Nguyễn Thuỳ Ninh",
-      posistion: "Giám đốc điều hành",
-      quote: "Giám đốc du học và xuất khẩu lao động sang Đài Loan",
+      posistion: "Giám đốc Thị trường Đài Loan",
+      quote: "Điều hành các hoạt động du học và xuất khẩu lao động Đài Loan",
       img: nguyenthuyninh,
       carrer: {
         title: "Kinh nghiệm làm việc",

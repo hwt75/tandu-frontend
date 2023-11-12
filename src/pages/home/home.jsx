@@ -277,7 +277,7 @@ const Home = () => {
               </div>
               <div className="feedback-footer">
                 <p>
-                  <b>Vũ Trường</b> - Kaplan International College{" "}
+                  <b>Vũ Trường</b> - Du học sinh Hàn Quốc{" "}
                 </p>
               </div>
             </div>
@@ -307,7 +307,7 @@ const Home = () => {
               </div>
               <div className="feedback-footer">
                 <p>
-                  <b>Mr. Kim Dong Sun</b> - Giám đốc cơ quan hỗ trợ việc làm toàn cầu{" "}
+                  <b>Mr. Kim Dong Sung</b> - Giám đốc cơ quan hỗ trợ việc làm toàn cầu{" "}
                 </p>
               </div>
             </div>

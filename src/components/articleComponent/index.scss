@@ -26,13 +26,13 @@ $secondary-color: #0857a3;
             }
         }
         .img-box {
-            max-width: 80%;
+            max-width: 100%;
             margin-bottom: 20px;
-            max-height: 40vw;
+            max-height: 60vw;
             text-align: center;
             .img{
-                width: 50vw;
-                max-height: 40vw;
+                width: 60vw;
+                max-height: 50vw;
             }
         }
         .color-primary {
@@ -63,4 +63,13 @@ $secondary-color: #0857a3;
     .container {
         max-width: 1140px;
     }
+}
+@media (max-width: 767px) {
+    
+        .img{
+            width: 80vw !important;
+            max-height: 40vw;
+        }
+    
+    
 }

@@ -9,16 +9,20 @@ import { BsFillBookFill } from "react-icons/bs";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 
 import { AboutUsSection } from "../../components/aboutUsSection/aboutUsSection";
+import { useNavigate } from "react-router-dom";
 
 const Scholarship = () => {
+  const navigate = useNavigate()
   const studyAbroadCountries = [
     {
       id: "1",
       name: "Du học Hàn Quốc",
+      path:"/korean"
     },
     {
       id: "2",
       name: "Du học Đài Loan",
+      path: "/taiwan"
     },
     
   ];
@@ -181,6 +185,7 @@ const Scholarship = () => {
                     <div
                       className="p-2 fw-bold fs-6"
                       style={{ cursor: "pointer" }}
+                      onClick={() => navigate(item.path)}
                     >
                       {item.name}
                     </div>
