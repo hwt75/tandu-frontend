@@ -22,7 +22,7 @@ const Home = () => {
    <div className="facebook">
     <BsFacebook className="loader_cube loader_cube--color" onClick={()=> redirectUrl("https://www.facebook.com/people/Du-H%E1%BB%8Dc-T%C3%A2n-Du/61552274185779/")}/>
     <PiPhoneCallFill className="loader_cube loader_cube--color phone"  onClick={()=> handleCallButtonClick()}/>
-    <SiZalo className="loader_cube loader_cube--color zalo" />
+    <SiZalo className="loader_cube loader_cube--color zalo" onClick={()=> redirectUrl("https://zaloapp.com/qr/p/1snes6mwm41h3")}/>
    </div>
   );
 };

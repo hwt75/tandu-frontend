@@ -20,7 +20,7 @@ const FounderPerson = () => {
       id: 2,
       name: "Đoàn Minh Phú",
       posistion: "Chủ Tịch Hội Đồng Quản Trị",
-      quote: "Người Sáng Lập Kiêm Chủ Tịch Hội Đồng Quản Trị",
+      quote: "Chủ Tịch Hội Đồng Quản Trị Điều Hành Các Hoạt Động",
       img: doanminhphu,
       carrer: {
         title: "Kinh nghiệm làm việc",
@@ -89,9 +89,9 @@ const FounderPerson = () => {
     },
     {
       id: 1,
-      name: "Pham Thi Bich Dao",
+      name: "Phạm Thị Bích Đào",
       posistion: "Giám đốc điều hành",
-      quote: "Trực tiếp phụ trách mảng du học và xuất khẩu lao động sang Hàn Quốc",
+      quote: "Giám đốc du học và xuất khẩu lao động sang Hàn Quốc",
       img: phamdao,
       carrer: {
         title: "Kinh nghiệm làm việc",
@@ -141,7 +141,7 @@ const FounderPerson = () => {
       id: 4,
       name: "Nguyễn Thuỳ Ninh",
       posistion: "Giám đốc điều hành",
-      quote: "Trực tiếp phụ trách mảng du học và xuất khẩu lao động sang Đài Loan",
+      quote: "Giám đốc du học và xuất khẩu lao động sang Đài Loan",
       img: nguyenthuyninh,
       carrer: {
         title: "Kinh nghiệm làm việc",
@@ -208,7 +208,7 @@ const FounderPerson = () => {
                   className="imgCard"
                   variant="top"
                   src={item.img}
-                  onClick={() => handleClickCard(item)}
+                  
                 />
               </div>
               <Card.Body className="bodyCard">
@@ -221,7 +221,7 @@ const FounderPerson = () => {
                     <BsTwitter className="iconFacebook" />
                     <BsInstagram className="iconFacebook" />
                   </div>
-                  <a>Xem thêm</a>
+                  <a onClick={() => handleClickCard(item)}>Xem thêm</a>
                 </div>
               </Card.Body>
             </Card>

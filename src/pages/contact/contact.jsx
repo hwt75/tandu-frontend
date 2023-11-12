@@ -5,7 +5,6 @@ import contactImg from "../../assets/image/contact.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { DevelopmentComponent } from "../../components/developmentComponent/home";
 import { AboutUsSection } from "../../components/aboutUsSection/aboutUsSection";
 import { ContactComponent } from "../../components/contact/contact";
 

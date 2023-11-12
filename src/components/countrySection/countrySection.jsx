@@ -15,8 +15,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useNavigate } from "react-router-dom";
 
 const country = [
-  { name: "Du học Hàn Quốc", img: koreaFlag, link: "/contact" },
-  { name: "Du học Đài Loan", img: taiwanFlag, link: "/contact" },
+  { name: "Du học Hàn Quốc", img: koreaFlag, link: "/korean" },
+  { name: "Du học Đài Loan", img: taiwanFlag, link: "/taiwan" },
   { name: "Du học các nước khác", img: different, link: "/contact" },
 ];
 
@@ -42,7 +42,7 @@ export const CountrySection = () => {
                 <div className="flag-description text-center">
                   <h5>{country.name}</h5>
                   <button className="read-more-btn animate__animated animate__pulse">
-                    Liên hệ với chúng tôi
+                    Xem thêm
                   </button>
                 </div>
               </div>

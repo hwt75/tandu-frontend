@@ -6,13 +6,17 @@ import { ScholarshipPage } from "../pages/scholarshipPage"
 import { ContactPage } from "../pages/contact";
 import { AboutUs } from "../pages/aboutUs/aboutUs";
 import { ErrorPage} from "../pages/errorPage";
-import { EditServicePage } from "../pages/editServicePage/editServicePage";
+import { KoreanPage } from "../pages/koreanPage/koreanPage";
+import { TaiwanPage } from "../pages/taiwanPage/taiwanPage";
+
 export const Routes = () => {
     return (
         <ReactRouterRoutes>
             <Route path="/home" element={<HomePage/>} />
             <Route path="/service" element={<ServicePage/>} />
-            <Route path="/service/edit" element={<EditServicePage/>} />
+            <Route path="/korean" element={<KoreanPage/>} />
+            <Route path="/taiwan" element={<TaiwanPage/>} />
+            
             <Route path="/scholarship" element={<ScholarshipPage/>} />
             <Route path="/contact" element={<ContactPage/>} />
             <Route path="/error" element={<ErrorPage/>} />

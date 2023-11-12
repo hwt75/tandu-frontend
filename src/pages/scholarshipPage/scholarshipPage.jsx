@@ -9,7 +9,6 @@ import { BsFillBookFill } from "react-icons/bs";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 
 import { AboutUsSection } from "../../components/aboutUsSection/aboutUsSection";
-import { BsFillPlusCircleFill } from "react-icons/bs";
 
 const Scholarship = () => {
   const studyAbroadCountries = [
@@ -124,7 +123,7 @@ const Scholarship = () => {
                     </div>
                   </div>
                   <div className="text-light read-more" onClick={()=>{window.open(scholarship.link)}}>
-                    <BsFillPlusCircleFill />
+                    Xem thêm
                   </div>
                 </div>
                 <div className="mainLeftScholarshipPage">

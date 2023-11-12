@@ -103,7 +103,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="copyright">@Copyright 2023 – Công ty cổ phần Tân Du.</p>
+        <p className="copyright">@Copyright 2023 – Công Ty Cổ Phần Giáo Dục Toàn Cầu Tân Du.</p>
       </div>
     </footer>
   );

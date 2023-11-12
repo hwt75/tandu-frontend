@@ -218,7 +218,7 @@ const Home = () => {
       </section>
       <section className="scholarship">
         <div className="container" data-aos="fade-up">
-          <h3 className="section-heading">Học bổng du học</h3>
+          <h3 className="section-heading">Chương Trình Độc Quyền Của Tân Du</h3>
           <div className="row">
             <div className="col-lg-8">
               <div className="row">
@@ -266,7 +266,7 @@ const Home = () => {
                 </div>
                 <div className="desc">
                   Tân Du đã đồng hành cùng mình trong quá trình làm hồ sơ du học
-                  thạc sỹ ngành thời trang tại Anh, từ khâu chọn trường, làm hồ
+                  thạc sỹ ngành thời trang tại Hàn Quốc, từ khâu chọn trường, làm hồ
                   sơ cho đến những giấy tờ liên quan để nhập học và nhập cảnh.
                   Các anh chị tư vấn của Tân Du đã hỗ trợ rất nhiệt tình dù khóa
                   học bị hoãn lại nhiều lần do dịch bệnh, nhưng anh chị vẫn cập
@@ -296,7 +296,7 @@ const Home = () => {
                   <img src={kimdongsun} />
                 </div>
                 <div className="desc">
-                  Trong quá trình hợp tác cùng Tân Du Việt Nam, điều khiến mình
+                  Trong quá trình hợp tác cùng Tân Du Việt Nam, điều khiến tôi
                   ấn tượng nhất là sự chuyên nghiệp, chỉn chu và chuyên tâm của
                   đội ngũ nhân viên tại Tân Du - không chỉ trong dịch vụ tư vấn
                   du học và hỗ trợ hướng nghiệp cho học sinh, sinh viên mà còn
@@ -307,7 +307,7 @@ const Home = () => {
               </div>
               <div className="feedback-footer">
                 <p>
-                  <b>Mr. Kim Dong Sun</b> -	Chủ tịch kiêm Giám đốc điều hành Colab International Co.,Ltd{" "}
+                  <b>Mr. Kim Dong Sun</b> - Giám đốc cơ quan hỗ trợ việc làm toàn cầu{" "}
                 </p>
               </div>
             </div>

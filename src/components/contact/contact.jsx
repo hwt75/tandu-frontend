@@ -25,7 +25,7 @@ const Contact = () => {
         <>
             <div className='contact-box col-md-6 col-xs-12'>
                 <div className='contact-heading'>
-                    <h4 className='company-name'>Công ty giáo dục Tân Du</h4>
+                    <h4 className='company-name'>Công ty giáo dục toàn cầu Tân Du</h4>
                     <p className='company-phone'><FaPhone className='second-color'/> <span className='phone-number'>{address.phone} (Hotline)</span></p>
                 </div>
                 {address.address.map((item,index) =>(

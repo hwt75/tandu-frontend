@@ -17,9 +17,16 @@ const generateRandomString = (length) => {
     return generateRandomString(20) + "-" + key + "-" + generateRandomString(20);
   };
   
-export const axiosRequest = (path) => {
+export const axiosRequest = (path, data) => {
   const url = `${host}${path}`;
-  return axios.post(url, { code: createKey(secret) });
+  return axios.post(url, { ...data, code: createKey(secret) });
 };
 
 
+export const convertArrayToObject = (dataArray) => {
+  return dataArray.reduce((acc, field) => {
+    const fieldName = Object.keys(field)[0];
+    acc[fieldName] = field[fieldName];
+    return acc;
+  }, {});
+};
