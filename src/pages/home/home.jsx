@@ -240,9 +240,9 @@ const Home = () => {
             </div>
             <div className="col-lg-4">
               <ul className="list-scholar">
-                <li><a><img src={SHU}/><span>Học bổng 50% học phí cho bậc Thạc sĩ</span></a></li>
-                <li><a><img src={UOB}/><span>Học bổng 50% dành cho ngành công nghệ tài chính MSc</span></a></li>
-                <li><a><img src={UOE}/><span>Học bổng 100% học phí cho sinh viên xuất sắc </span></a></li>
+                <li><a onClick={()=> navigate("/scholarship")} ><img src={dongnam}/><span>Học bổng 50% học phí cho bậc Thạc sĩ</span></a></li>
+                <li><a onClick={()=> navigate("/scholarship")}><img src={canich}/><span>Học bổng 50% dành cho ngành công nghệ tài chính MSc</span></a></li>
+                <li><a onClick={()=> navigate("/scholarship")}><img src={kyung}/><span>Học bổng 100% học phí cho sinh viên xuất sắc </span></a></li>
               </ul>
               <a className="read-more" onClick={()=> navigate("/scholarship")}>Xem thêm</a>
             </div>
@@ -255,12 +255,7 @@ const Home = () => {
             <h4>Du học sinh nói gì về Tân Du</h4>
             <div className="feedback-box">
               <div className="feedback-content">
-                {/* <div className="arrow left">
-                  <FaAngleLeft />
-                </div>
-                <div className="arrow right">
-                  <FaAngleRight />
-                </div> */}
+
                 <div className="avatar">
                   <img src={avt1} />
                 </div>

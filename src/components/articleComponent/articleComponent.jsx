@@ -65,9 +65,8 @@ const Home = (props) => {
             <p>
               <strong>
                 <div href="" className="color-secondary">
-                  Công ty giáo dục toàn cầu
+                  Công ty giáo dục toàn cầu | Tân Du
                 </div>{" "}
-                | Tân Du
               </strong>
             </p>
             
